@@ -1,0 +1,115 @@
+<link rel="stylesheet" href="/css/matricula/detalle.css">
+<script src="/js/pdf/html2pdf.bundle.min.js"></script>
+<button id="btnCrearPdf" type="button">
+    <i class="fas fa-file-pdf"></i> Exportar pdf
+</button>
+{{#each list}}
+<form action="/cars/matricula/detailList/{{idCars}}"></form>
+{{/each}}
+<div id="texto">
+    <p>RACINGMOTOS ESCUELA DE CONDUCCIÓN </p>
+    <p>LISTADO AGENCIA METROPOLITANA DE TRÀNSITO</p>
+</div>
+<div id="imagen">
+    <img src="/img/logos/RACING ISOTIPO VERTICAL.jpg" alt="">
+</div>
+<table id="tabla">
+    <tbody>
+        <tr>
+            <td>Marca</td>
+            <td>Clase</td>
+            <td>Tipo</td>
+            <td>Año</td>
+            <td>Placa</td>
+            <td>Modelo</td>
+            <td>Motor</td>
+            <td>Chasis</td>
+            <td>Fecha</td>
+            <td>AÑO MATRICULA</td>
+            <td>FECHA CADUCA MATRICULA</td>
+            <td>A NOMBRE DE</td>
+            <td>RTV</td>
+            <td>COMISION</td>
+            <td>IMPUESTO SOBRE VEHICULOS</td>
+            <td>COMISION</td>
+            <td>MATRICULA</td>
+            <td>COMISION</td>
+            <td>FONDO VIAL</td>
+            <td>COMISION</td>
+            <td>TOTAL PAGO</td>
+        </tr>
+        <tr>
+            {{#each matriculas}}
+            <td>
+                <p>{{brandCars}}</p>
+            </td>
+            <td>
+                <p>{{classCars}}</p>
+            </td>
+            <td>
+                <p>{{typeCars}}</p>
+            </td>
+            <td>
+                <p>{{yearsCars}}</p>
+            </td>
+            <td>
+                <p>{{licenseplateCars}}</p>
+            </td>
+            <td>
+                <p>{{modelCars}}</p>
+            </td>
+            <td>
+                <p>{{engineCars}}</p>
+            </td>
+            <td>
+                <p>{{chassisCars}}</p>
+            </td>
+            <td>
+                <p>{{datelicensePlates}}</p>
+            </td>
+            <td>
+                <p>{{registrationYearLicensePlates}}</p>
+            </td>
+            <td>
+                <p>{{registrationExpirationDateLicensePlates}}</p>
+            </td>
+            <td>
+                <p>{{toNameLicensePlates}}</p>
+            </td>
+            <td>
+                <p>{{rtvTuitionTax}}</p>
+            </td>
+            <td>
+                <p>{{commissionTuitionTax}}</p>
+            </td>
+            <td>
+                <p>{{vehicleTaxTuitionTax}}</p>
+            </td>
+            <td>
+                <p>{{commission2TuitionTax}}</p>
+            </td>
+            <td>
+                <p>{{tuitionTuitionTax}}</p>
+            </td>
+            <td>
+                <p>{{commission3TuitionTax}}</p>
+            </td>
+            <td>
+                <p>{{roadFundRegistrationTax}}</p>
+            <td>
+                <p>{{commission4TuitionTax}}</p>
+            </td>
+            <td>
+                <p>{{totalTuitionTax}}</p>
+            </td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+<div id="boton">
+    {{#each matriculas}}
+    <a href="/cars/matricula/edit/{{idlicensePlate}}"><button type="button">Actualizar</button></a>
+    {{/each}}
+</div>
+
+<script src="/js/pdf/pdf.js"></script>

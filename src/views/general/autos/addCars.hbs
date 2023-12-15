@@ -1,0 +1,43 @@
+<link rel="stylesheet" href="/css/autos/agregar.css" />
+
+<form action="/cars/add/{{user.idUsers}}" method="post" enctype="multipart/form-data">
+
+    <div id="contenedor">
+        <!-- Aquí comienza la seccion de imagen -->
+        <div id="imagen">
+            <label>Foto de la plataforma</label>
+            <div id="cambioImagen">
+                <img src="/img/icons/black/no-car.png" id="imagenPrevisualizacion" />
+            </div>
+            <input type="file" name="imageCars" id="seleccionArchivos" accept="image/*" required />
+        </div>
+        <!-- Aquí termina la sección de imagen -->
+
+        <!-- Aquí comienza el formulario -->
+        <div id="formulario">
+            <div id="titulo">
+                {{#each maxId}}
+                <h5><b>Nueva Plataforma</b></h5>
+                <input type="text" name="idCarro" value="{{maximo}}" id="numero" readonly>
+                {{/each}}
+            </div>
+
+            <div id="Placa">
+                <label>Nombre de la plataforma:</label>
+                <input type="text" name="nombrePlataforma" required>
+            </div>
+
+            <div id="Marca">
+                <label>Contraseña:</label>
+                <input type="text" name="password" id="" required>
+            </div>
+
+            
+        <div id="boton">
+            <button type="submit">Guardar</button>
+        </div>
+    </div>
+</form>
+
+<script src="/js/numero.js"></script>
+<script src="/js/previsualizacion.js"></script>

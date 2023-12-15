@@ -1,0 +1,52 @@
+<link rel="stylesheet" href="/css/autos/editar.css" />
+
+{{#each list}}
+<form action="/cars/edit/{{idCars}}" method="post" enctype="multipart/form-data">
+    <div id="contenedor">
+        <!-- Aquí comienza la seccion de imagen -->
+        <div id="imagenCarro">
+            <label>Foto del Vehículo</label>
+            <img src="/img/cars/{{imageCars}}" id="imagenAnterior">
+            <div id="eleccion">
+                <label>¿Desea actualizar la imagen?</label>
+                <input type="radio" name="si" id="si" value="si" onclick="elecciones.SI()">
+                <p id="pSi">Si</p>
+                <input type="radio" name="no" id="no" value="no" onclick="elecciones.NO()">
+                <p id="pNo">No</p>
+            </div>
+
+            <div id="imagenNueva">
+                <div id="cambioImagen">
+                    <img src="/img/cars/{{imageCars}}" id="imagenPrevisualizacion">
+                </div>
+                <input type="file" name="imageCars" id="seleccionArchivos" accept="image/*" />
+            </div>
+        </div>
+        <!-- Aquí termina la sección de imagen -->
+
+        <!-- Aquí comienza el formulario -->
+        <div id="formulario">
+            <div id="titulo">
+                <h5><b>Actualizar datos de la plataforma</b></h5>
+                <input type="text" name="idCarro" value="{{idCars}}" id="numero" readonly>
+            </div>
+
+            <div id="Placa">
+                <label>Plataforma:</label>
+                <input type="text" name="nombrePlataforma" required value="{{nombrePlataforma}}">
+            </div>
+
+            <div id="Marca">
+                <label>Marca:</label>
+                <input type="text" name="password" id="" required value="{{password}}">
+            </div>
+
+        <div id="boton">
+            <button type="submit">Guardar</button>
+        </div>
+    </div>
+    {{/each}}
+</form>
+
+<script src="/js/previsualizacion.js"></script>
+<script src="/js/elecion.js"></script>

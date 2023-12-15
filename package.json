@@ -1,0 +1,46 @@
+{
+  "name": "bitacora",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "connect": "^3.7.0",
+    "connect-flash": "^0.1.1",
+    "connect-mysql": "^4.0.0",
+    "crypto-js": "^4.1.1",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-fileupload": "^1.4.0",
+    "express-handlebars": "^6.0.7",
+    "express-mysql-session": "^2.1.8",
+    "express-session": "^1.17.3",
+    "leaflet": "^1.9.3",
+    "morgan": "^1.10.0",
+    "mysql2": "^3.1.1",
+    "passport": "^0.6.0",
+    "passport-local": "^1.0.0",
+    "sequelize": "^6.28.0",
+    "timeago.js": "^4.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20",
+    "npm-check-updates": "^16.6.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lordByron666/eventsDeployPris.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lordByron666/eventsDeployPris/issues"
+  },
+  "homepage": "https://github.com/lordByron666/eventsDeployPris#readme",
+  "description": ""
+}

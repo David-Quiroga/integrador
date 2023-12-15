@@ -1,0 +1,73 @@
+<link rel="stylesheet" href="/css/ordenTrabajo/agregar.css">
+<form action="/cars/ordenTrabajo/edit/{{user.idUsers}}" method="post">
+    <div id="orderWorks">
+        {{#each maxId}}
+        <p>ORDEN N°</p>
+        <input type="text" name="idOderWork" value="{{maximo}}" id="numero" readonly>
+        {{/each}}
+    </div>
+    <div id="solicitantes">
+        <label>solicitante: <input type="text" name="applicantOrderWork" id="solicitante"></label>
+    </div>
+    <div id="DatosCarro">
+        {{#each list}}
+        <div id="vehiculo">
+            <label>VEHÍCULO N°:<input type="text" name="idCars" id="" value="{{idCars}}"></label>
+        </div>
+        <div id="Placa">
+            <label>PLACA: <p>{{licenseplateCars}}</p></label>
+        </div>
+        <div id="Marca">
+            <label>Marca: <p>{{modelCars}}</p></label>
+        </div>
+        <div id="Modelo">
+            <label>Modelo: <p>{{brandCars}}</p></label>
+        </div>
+        {{/each}}
+    </div>
+    <div id="provedor">
+        <div id="Proveedor">
+            <label>PROVEEDOR:</label>
+            <input type="text" name="nameVendor" id="">
+        </div>
+        <div id="Telefono">
+            <label>TELÉFONO:</label>
+            <input type="text" name="phoneVendor" id="">
+        </div>
+        <div id="Direccion">
+            <label>DIRECCIÓN:</label>
+            <input type="text" name="addressVendor" id="">
+        </div>
+    </div>
+    <div id="numeroDeColumnas">
+        <label>Columnas Necesarias:</label>
+        <input type="text" name="columnas" id="columnas">
+        <button type="button" onclick="tabla.generarTablas()">Generar</button>
+    </div>
+    <div id="fecha">
+        <label>Fecha:</label>
+        <input type="date" name="dateOrderWork" id="">
+    </div>
+    <div id="aproximado">
+        <label>EL VALOR TOTAL ES UN APROXIMADO:</label>
+        <input type="text" name="aproximatePrecie" id="">
+    </div>
+    <div id="eleccionImagen">
+        <label>Desea Ingresar Una Imagen:</label>
+        <p id="si">si<input type="radio" name="si" onclick="elecciones.Si()"></p>
+        <p id="no">no<input type="radio" name="no" ></p>
+    </div>
+    <div id="imagen">
+        <label>Foto del Vehìculo</label>
+        <div id="cambioImagen">
+            <img src="/img/user/NoImagen.jpg" id="imagenPrevisualizacion" />
+        </div>
+        <input type="file" name="imageCars" id="seleccionArchivos" accept="image/*" required />
+    </div>
+    <div id="tabala"></div>
+</form>
+
+<script src="/js/numero.js"></script>
+<script src="/js/previsualizacion.js"></script>
+<script src="/js/tabla/ordenTrabajo.js"></script>
+<script src="/js/tabla/eleccion.js"></script>

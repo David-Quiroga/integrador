@@ -1,0 +1,83 @@
+<link rel="stylesheet" href="/css/events/eventoAdd.css" />
+
+<form action="/Motorcycles/add/{{user.idUsers}}" method="post" enctype="multipart/form-data">
+
+    <div id="contenedor">
+        <!-- Aquí comienza la seccion de imagen -->
+        <div id="imagen">
+            <label>Foto del Vehìculo</label>
+            <div id="cambioImagen">
+                <img src="/img/user/NoImagen.jpg" id="imagenPrevisualizacion" />
+            </div>
+            <input type="file" name="imageMotorcycles" id="seleccionArchivos" accept="image/*" required />
+        </div>
+        <!-- Aquí termina la sección de imagen -->
+
+        <!-- Aquí comienza el formulario -->
+        <div id="formulario">
+            <div id="titulo">
+                {{#each maxId}}
+                <p>NUEVO CARRO</p>
+                <input type="text" name="idMoto" value="{{maximo}}" id="numero" readonly>
+                {{/each}}
+            </div>
+
+            <div id="Matricula">
+                <label>Matrícula:</label>
+                <input type="text" name="licenseplateMotorcycles" required />
+            </div>
+
+            <div id="Marca">
+                <label>Marca:</label>
+                <input type="text" name="brandMotorcycles" id="" required>
+            </div>
+
+            <div id="Modelo">
+                <label>Modelo:</label>
+                <input type="text" name="modelMotorcycles" id="" required>
+            </div>
+
+            <div id="Tipo">
+                <label>Tipo:</label>
+                <input type="text" name="typeMotorcycles" id="" required>
+            </div>
+
+            <div id="Clase">
+                <label>Clase:</label>
+                <input type="text" name="classMotorcycles" id="" required>
+            </div>
+
+
+            <div id="Color">
+                <label>Color:</label>
+                <input type="text" name="colourMotorcycles" id="" required>
+            </div>
+
+            <div id="Chasis">
+                <label>Chasis:</label>
+                <input type="text" name="chassisMotorcycles" id="" required>
+            </div>
+
+            <div id="Motor">
+                <label>Motor:</label>
+                <input type="text" name="engineMotorcycles" id="" required>
+            </div>
+
+            <div id="Año">
+                <label>Año:</label>
+                <input type="text" name=" yearsMotorcycles" required />
+            </div>
+        </div>
+        <div id="boton">
+            <button type="button" onclick="modals.paso1()">
+                <div id="iconoGuardar">
+                    <img src="/img/icons/white/save.png">
+                </div>Siguiente
+            </button>
+        </div>
+    </div>
+</form>
+
+<script src="/js/numero.js"></script>
+<script src="/js/previsualizacion.js"></script>
+<script src="/js/events/evento.js"></script>

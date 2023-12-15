@@ -1,0 +1,187 @@
+#orderWorks {
+    width: 100%;
+    max-width: 12%;
+    position: absolute;
+    top: 13%;
+    left: 80%;
+}
+
+#orderWorks p {
+    position: absolute;
+    left: 0%;
+    margin-top: 2.5%;
+}
+
+#orderWorks input {
+    width: 15%;
+    position: absolute;
+    left: 45%;
+}
+
+#solicitantes {
+    width: 20%;
+    position: absolute;
+    top: 5%;
+    left: 0%;
+}
+
+#DatosCarro {
+    width: 15%;
+    position: absolute;
+    top: 10%;
+    left: 1%;
+}
+
+#vehiculo input {
+    width: 15%;
+    margin-top: 2%;
+}
+
+#Placa p {
+    margin-top: 5%;
+}
+
+#Marca p {
+    margin-top: 5%;
+}
+#Modelo p {
+    margin-top: 5%;
+}
+
+#provedor{
+    width: 15%;
+    height: 20%;
+    position: absolute;
+    top: 35%;
+    left: 2%;
+}
+#numeroDeColumnas{
+    width: 20%;
+    position: absolute;
+    top: 7%;
+    left: 78%;
+}
+
+#Proveedor label{
+    position: absolute;
+    left: 2%;
+}
+
+#Telefono label{
+    position: absolute;
+    top: 35%;
+    left: 2%;
+}
+
+#Direccion label{
+    position: absolute;
+    top: 75%;
+    left: 2%;
+}
+
+#Proveedor input{
+    width: 50%;
+    position: absolute;
+    left: 50%;
+}
+
+#Telefono input{
+    width: 50%;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+}
+
+#Direccion input{
+    width: 50%;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+}
+
+#fecha{
+    width: 15%;
+    position: absolute;
+    top: 20%;
+    left: 74%;
+}
+
+#aproximado{
+    width: 15%;
+    position: absolute;
+    top: 27%;
+    left: 80%;
+}
+
+#eleccionImagen{
+position: absolute;
+width: 15%;
+top: 3%;
+left: 40%;
+}
+
+#imagen{
+    width: 10%;
+    position: absolute;
+    top: 20%;
+    left: 42%;
+}
+
+#imagen1{
+    width: 10%;
+    position: absolute;
+    top: 1%;
+    left: 42%;
+}
+
+#btnCrearPdf{
+    width: 180px;
+    margin-top: 30px;
+    margin-left: 1700px;
+}
+
+table{
+    border: 1px solid black;
+    text-align: center;
+    width: 90%;
+    position: absolute;
+    left: 5%;
+    top: 60%;
+}
+tr,
+td{
+    border: 1px solid black;
+}
+
+#boton {
+    width: 3%;
+    height: 5%;
+    position: absolute;
+    top: 39%;
+    right: 6%;
+}
+
+#boton button {
+    text-align: right;
+    background-color: #0097e7;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#iconoGuardar {
+    background-color: #1232bd;
+    border-radius: 10%;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: 0%;
+    margin-top: 0%;
+}
+
+#iconoGuardar img {
+    max-width: 100%;
+    max-height: 100%;
+}

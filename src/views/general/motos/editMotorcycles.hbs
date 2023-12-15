@@ -1,0 +1,72 @@
+<link rel="stylesheet" href="/css/events/eventoAdd.css" />
+
+<form action="/cars/edit/{{user.idUsers}}" method="post" enctype="multipart/form-data">
+
+    <div id="contenedor">
+        {{#each maxId}}
+        <!-- Aquí comienza la seccion de imagen -->
+        <div id="imagen">
+            <label>Foto del Vehìculo</label>
+            <div id="cambioImagen">
+                <img src="/img/cars/{{imageCars}}" id="imagenPrevisualizacion" />
+            </div>
+            <input type="file" name="imageCars" id="seleccionArchivos" accept="image/*" required />
+        </div>
+        <!-- Aquí termina la sección de imagen -->
+
+        <!-- Aquí comienza el formulario -->
+        <div id="formulario">
+            <div id="titulo">
+                <p>NUEVO CARRO</p>
+                <input type="text" name="idCarro" value="{{idCars}}" id="numero" readonly>
+            </div>
+
+            <div id="Nombre">
+                <label>Matrícula:</label>
+                <input type="text" name="licenseplateCars" required value="{{licenseplateCars}}">
+            </div>
+
+            <div id="descripcion">
+                <label>Marca:</label>
+                <input type="text" name="brandCars" id="" required value="{{brandCars}}">
+            </div>
+
+            <div id="modalidad">
+                <label>Modelo:</label>
+                <input type="text" name="modelCars" id="" required value="{{modelCars}}">
+            </div>
+
+            <div id="precio">
+                <label>Color:</label>
+                <input type="text" name="colourCars" id="" required value="{{colourCars}}">
+            </div>
+
+            <div id="Categoria">
+                <label>Chasis:</label>
+                <input type="text" name="chassisCars" id="" required value="{{chassisCars}}">
+            </div>
+
+            <div id="SubCategory">
+                <label>Motor:</label>
+                <input type="text" name="engineCars" id="" required value="{{engineCars}}">
+            </div>
+
+            <div id="horaInicio">
+                <label>Año:</label>
+                <input type="text" name=" yearsCars" required value="{{yearsCars}}">
+            </div>
+        </div>
+        <div id="boton">
+            <button type="button" onclick="modals.paso1()">
+                <div id="iconoGuardar">
+                    <img src="/img/icons/white/save.png">
+                </div>Siguiente
+            </button>
+        </div>
+        {{/each}}
+    </div>
+</form>
+
+<script src="/js/numero.js"></script>
+<script src="/js/previsualizacion.js"></script>
+<script src="/js/events/evento.js"></script>

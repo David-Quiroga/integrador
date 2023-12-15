@@ -1,0 +1,123 @@
+#imagen{
+    margin-top: -90px;
+    margin-left: 10px;
+    width: 70px;
+    height: 70px;
+}
+
+#imagen img{
+    width: 70px;
+    height: 70px;
+}
+
+#datosCarro{
+    width: 300px;
+    height: 300px;
+    margin-left: 10px;
+}
+
+#marca,
+#clase,
+#tipo,
+#año,
+#placa,
+#modelo,
+#motor,
+#chasis,
+#responsable{
+    border: 1px solid black;
+    text-align: center;
+}
+
+#marca label,
+#clase label,
+#tipo label,
+#año label,
+#placa label,
+#modelo label,
+#motor label,
+#chasis label{
+    margin-right: 220px;
+}
+
+#responsable label{
+    width: 300px;
+    font-size: 15px;
+    margin-right: 180px;
+}
+
+#marca p,
+#clase p,
+#tipo p,
+#año p,
+#placa p,
+#modelo p,
+#motor p,
+#chasis p,
+#responsable p{
+    margin-top: -30px;
+}
+
+#Fecha{
+    width: 300px;
+    margin-top: -250px;
+    margin-left: 1400px;
+    text-align: center;
+}
+
+#fechaEntrega{
+    width: 300px;
+    margin-top: 40px;
+    margin-left: 1300px;
+    text-align: center;
+}
+
+#FIRMA{
+    width: 200px;
+    margin-top: 30px;
+    margin-left: 1310px;
+}
+
+#tabla{
+    text-align: center;
+    margin-top: 270px;
+    margin-left: 225px;
+}
+
+#btnCrearPdf{
+    width: 180px;
+    margin-top: 30px;
+    margin-left: 1700px;
+}
+
+#texto{
+        text-align: center;
+        width: 800px;
+        margin-top: -15px;
+        margin-left: 400px;
+}
+
+input{
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    background-color: transparent;
+}
+table {
+    border-collapse: collapse;
+}
+ 
+table,
+th,
+td {
+    border: 1px solid black;
+}
+ 
+th,
+td {
+    padding: 5px;
+}
+a{
+    color: #ffaa00;
+    font-size: 2rem;
+}

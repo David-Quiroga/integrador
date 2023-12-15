@@ -1,0 +1,265 @@
+<link rel="stylesheet" href="/css/implementos/agregar.css">
+<form action="/cars/implementos/add/{{user.idUsers}}" method="post">
+    <div id="DatosCarro">
+        {{#each list}}
+        <div id="vehiculo">
+            <label>VEHÍCULO N°:<input type="text" name="idCars" id="" value="{{idCars}}"></label>
+        </div>
+        <div id="Placa">
+            <label>PLACA: <p>{{licenseplateCars}}</p></label>
+        </div>
+        <div id="Marca">
+            <label>Marca: <p>{{modelCars}}</p></label>
+        </div>
+        <div id="Modelo">
+            <label>Modelo: <p>{{brandCars}}</p></label>
+        </div>
+        {{/each}}
+    </div>
+    {{#each maximo}}
+    <div id="maximo">
+        <p>Registro N°: <input type="text" name="idSeguridad" id="numero" value="{{maximo}}"></p>
+    </div>
+    {{/each}}
+    <div id="fecha">
+        <label>Fecha:</label>
+        <input type="text" name="dateSecurityElemenstAndServis" id="" required>
+    </div>
+    <div id="titulo">
+        <select name="typeSecurityElemenstAndServisDetails" id="nombre" onclick="implement.metodo()">
+            <option value="CODIGOS DE ESPECIFICACIÓN">CODIGOS DE ESPECIFICACIÓN</option>
+            <option value="NIVELES">NIVELES</option>
+            <option value="ELEMENTOS DE SEGURIDAD  Y SERVICIOS">ELEMENTOS DE SEGURIDAD Y SERVICIOS</option>
+            <option value="HERRAMIENTAS">HERRAMIENTAS</option>
+            <option value="LUCES">LUCES</option>
+        </select>
+    </div>
+    <div id="implementos">
+        <div id="eleciones">
+            <label id="primero">si</label>
+            <label id="segundo">no</label>
+        </div>
+        <div id="PINTURA">
+            <input type="text" name="nameSecurityElemenstAndServisDetails" id="pintura" value="PINTURA" readonly>
+            <input type="radio" name="" id="si" value="si" onchange="siOno.primerSi()">
+            <div id="inp"></div>
+            <input type="radio" name="" id="no" value="no" onchange="siOno.primerNO()">
+        </div>
+        <div id="ALTERNADOR ">
+            <input type="text" name="nameSecurityElemenstAndServisDetails" id="" value="ALTERNADOR" readonly>
+            <input type="radio" name="" id="si1" value="si" onchange="siOno.segundoSi()">
+            <div id="inp1"></div>
+            <input type="radio" name="" id="no1" value="no" onchange="siOno.segundoNO()">
+        </div>
+        <div id="CORREA(s)">
+            <input type="text" name="nameSecurityElemenstAndServisDetails" id="" value="CORREA(s)" readonly>
+            <input type="radio" name="" id="si2" value="si" onchange="siOno.terseroSi()">
+            <div id="inp2"></div>
+            <input type="radio" name="" id="no2" value="no" onchange="siOno.terseroNO()">
+        </div>
+        <div id="NEUMATICOS">
+            <input type="text" name="nameSecurityElemenstAndServisDetails" id="" value="NEUMATICOS" readonly>
+            <input type="radio" name="" id="si3" value="si" onchange="siOno.cuartoSi()">
+            <div id="inp3"></div>
+            <input type="radio" name="" id="no3" value="no" onchange="siOno.cuartoNO()">
+        </div>
+        <div id="BATERIA ">
+            <input type="text" name="nameSecurityElemenstAndServisDetails" id="" value="BATERIA" readonly>
+            <input type="radio" name="" id="si4" value="si" onchange="siOno.quintoSi()">
+            <div id="inp4"></div>
+            <input type="radio" name="" id="no4" value="no" onchange="siOno.quintoNO()">
+        </div>
+    </div>
+    <div id="implementos2">
+        <div id="eleciones">
+            <label id="primero">si</label>
+            <label id="segundo">no</label>
+        </div>
+        <div id="COMBUSTIBLE">
+            <input type="text" name="nameSecurityElemenstAndServisDetails" id="" readonly value="COMBUSTIBLE">
+            <input type="radio" name="" id="si5" value="si" onchange="siOno.sextoSi()">
+            <div id="inp5"></div>
+            <input type="radio" name="" id="no5" value="no" onchange="siOno.sextoNO()">
+        </div>
+        <div id="ACEITEDEMOTOR">
+            <input type="text" name="nameSecurityElemenstAndServisDetails" id="" readonly value="ACEITE DE MOTOR">
+            <input type="radio" name="" id="si6" value="si" onchange="siOno.septimoSi()">
+            <div id="inp6"></div>
+            <input type="radio" name="" id="no6" value="no" onchange="siOno.septimoNO()">
+        </div>
+        <div id="REFRIGERANTE(AGUA)">
+            <input type="text" name="nameSecurityElemenstAndServisDetails" id="" readonly value="REFRIGERANTE (AGUA)">
+            <input type="radio" name="" id="si7" value="si" onchange="siOno.octaboSi()">
+            <div id="inp7"></div>
+            <input type="radio" name="" id="no7" value="no" onchange="siOno.octaboNO()">
+        </div>
+        <div id="LIQ.FRENOS">
+            <input type="text" name="nameSecurityElemenstAndServisDetails" id="" readonly value="LIQ. FRENOS">
+            <input type="radio" name="" id="si8" value="si" onchange="siOno.novenoSi()">
+            <div id="inp8"></div>
+            <input type="radio" name="" id="no8" value="no" onchange="siOno.novenoNO()">
+        </div>
+        <div id="WIPPER">
+            <input type="text" name="nameSecurityElemenstAndServisDetails" id="" readonly value="WIPPER">
+            <input type="radio" name="" id="si9" value="si" onchange="siOno.decimoSi()">
+            <div id="inp9"></div>
+            <input type="radio" name="" id="no9" value="no" onchange="siOno.decimoNO()">
+        </div>
+        <div id="ACEITETRANS">
+            <input type="text" name="nameSecurityElemenstAndServisDetails" id="" readonly value="ACEITE TRANS">
+            <input type="radio" name="" id="si10" value="si" onchange="siOno.decimoPrimeroSi()">
+            <div id="inp10"></div>
+            <input type="radio" name="" id="no10" value="no" onchange="siOno.decimoPrimeroNO()">
+        </div>
+    </div>
+    <div id="implementos3">
+        <div id="eleciones">
+            <label id="primero">si</label>
+            <label id="segundo">no</label>
+        </div>
+        <div id="RADIO">
+            <input type="text" name="nameSecurityElemenstAndServisDetails" id="" readonly value="RADIO">
+            <input type="radio" name="" id="si11" value="si" onchange="siOno.decimoSegundoSi()">
+            <div id="inp11"></div>
+            <input type="radio" name="" id="no11" value="no" onchange="siOno.decimoSegundoNO()">
+        </div>
+        <div id="ANTENA">
+            <input type="text" name="nameSecurityElemenstAndServisDetails" id="" readonly value="ANTENA">
+            <input type="radio" name="" id="si12" value="si" onchange="siOno.decimoTerceroSi()">
+            <div id="inp12"></div>
+            <input type="radio" name="" id="no12" value="no" onchange="siOno.decimoTerceroNO()">
+        </div>
+        <div id="EXTINTOR">
+            <input type="text" name="nameSecurityElemenstAndServisDetails" id="" readonly value="EXTINTOR">
+            <input type="radio" name="" id="si13" value="si" onchange="siOno.decimoCuartoSi()">
+            <div id="inp13"></div>
+            <input type="radio" name="" id="no13" value="no" onchange="siOno.decimoCuartoNO()">
+        </div>
+        <div id="TRIANGULOS">
+            <input type="text" name="nameSecurityElemenstAndServisDetails" id="" readonly value="TRIANGULOS">
+            <input type="radio" name="" id="si14" value="si" onchange="siOno.decimoQuintoSi()">
+            <div id="inp14"></div>
+            <input type="radio" name="" id="no14" value="no" onchange="siOno.decimoQuintoNO()">
+        </div>
+        <div id="BOTIQUIN">
+            <input type="text" name="nameSecurityElemenstAndServisDetails" id="" readonly value="BOTIQUIN">
+            <input type="radio" name="" id="si15" value="si" onchange="siOno.decimoSextoSi()">
+            <div id="inp15"></div>
+            <input type="radio" name="" id="no15" value="no" onchange="siOno.decimoSextoNO()">
+        </div>
+        <div id="GATA">
+            <input type="text" name="nameSecurityElemenstAndServisDetails" id="" readonly value="GATA">
+            <input type="radio" name="" id="si16" value="si" onchange="siOno.decimoSeptimoSi()">
+            <div id="inp16"></div>
+            <input type="radio" name="" id="no16" value="no" onchange="siOno.decimoSeptimoNO()">
+        </div>
+        <div id="CONOS">
+            <input type="text" name="nameSecurityElemenstAndServisDetails" id="" readonly value="CONOS">
+            <input type="radio" name="" id="si17" value="si" onchange="siOno.decimoOctaboSi()">
+            <div id="inp17"></div>
+            <input type="radio" name="" id="no17" value="no" onchange="siOno.decimoOctaboNO()">
+        </div>
+        <div id="RETROVISORES">
+            <input type="text" name="nameSecurityElemenstAndServisDetails" id="" readonly value="RETROVISORES">
+            <input type="radio" name="" id="si18" value="si" onchange="siOno.decimoNovenoSi()">
+            <div id="inp18"></div>
+            <input type="radio" name="" id="no18" value="no" onchange="siOno.decimoNovenoNO()">
+        </div>
+        <div id="PRÓXIMOMANTENIMIENTO">
+            <input type="text" name="nameSecurityElemenstAndServisDetails" id="" readonly value="PRÓXIMO MANTENIMIENTO">
+            <input type="radio" name="" id="si130" value="si" onchange="siOno.decimoTreintaUnoSi()">
+            <div id="inp30"></div>
+            <input type="radio" name="" id="no30" value="no" onchange="siOno.decimoTreintaUnoNO()">
+        </div>
+    </div>
+    <div id="implementos4">
+        <div id="eleciones">
+            <label id="primero">si</label>
+            <label id="segundo">no</label>
+        </div>
+        <div id="PISOS">
+            <input type="text" name="nameSecurityElemenstAndServisDetails" id="" readonly value="PISOS">
+            <input type="radio" name="" id="si19" value="si" onchange="siOno.decimoVenteSi()">
+            <div id="inp19"></div>
+            <input type="radio" name="" id="no19" value="no" onchange="siOno.decimoVenteNO()">
+        </div>
+        <div id="PLUMILLASDEL.">
+            <input type="text" name="nameSecurityElemenstAndServisDetails" id="" readonly value="PLUMILLAS DEL.">
+            <input type="radio" name="" id="si20" value="si" onchange="siOno.decimoVenteVentiunoSi()">
+            <div id="inp20"></div>
+            <input type="radio" name="" id="no20" value="no" onchange="siOno.decimoVenteVentiunoNO()">
+        </div>
+        <div id="PLUMILLASTRAS">
+            <input type="text" name="nameSecurityElemenstAndServisDetails" id="" readonly value="PLUMILLAS TRAS">
+            <input type="radio" name="" id="si21" value="si" onchange="siOno.decimoVenteDosSi()">
+            <div id="inp21"></div>
+            <input type="radio" name="" id="no21" value="no" onchange="siOno.decimoVenteDosNO()">
+        </div>
+        <div id="CINTURONES">
+            <input type="text" name="nameSecurityElemenstAndServisDetails" id="" readonly value="CINTURONES">
+            <input type="radio" name="" id="si22" value="si" onchange="siOno.decimoVenteTresSi()">
+            <div id="inp22"></div>
+            <input type="radio" name="" id="no22" value="no" onchange="siOno.decimoVenteTresNO()">
+        </div>
+        <div id="TAPIZINTERIOR">
+            <input type="text" name="nameSecurityElemenstAndServisDetails" id="" readonly value="TAPIZ INTERIOR">
+            <input type="radio" name="" id="si23" value="si" onchange="siOno.decimoVenteCuartoSi()">
+            <div id="inp23"></div>
+            <input type="radio" name="" id="no23" value="no" onchange="siOno.decimoVenteCuartoNO()">
+        </div>
+    </div>
+    <div id="implementos5">
+        <div id="eleciones">
+            <label id="primero">si</label>
+            <label id="segundo">no</label>
+        </div>
+        <div id="ALTADELDER">
+            <input type="text" name="nameSecurityElemenstAndServisDetails" id="" readonly value="ALTA DEL DER">
+            <input type="radio" name="" id="si24" value="si" onchange="siOno.decimoVenteCincoSi()">
+            <div id="inp24"></div>
+            <input type="radio" name="" id="no24" value="no" onchange="siOno.decimoVenteCincoNO()">
+        </div>
+        <div id="ALTADELIZQ">
+            <input type="text" name="nameSecurityElemenstAndServisDetails" id="" readonly value="ALTA DEL IZQ">
+            <input type="radio" name="" id="si25" value="si" onchange="siOno.decimoVenteSeisSi()">
+            <div id="inp25"></div>
+            <input type="radio" name="" id="no25" value="no" onchange="siOno.decimoVenteSeisNO()">
+        </div>
+        <div id="BAJADELDER">
+            <input type="text" name="nameSecurityElemenstAndServisDetails" id="" readonly value="BAJA DEL DER">
+            <input type="radio" name="" id="si26" value="si" onchange="siOno.decimoVenteSieteSi()">
+            <div id="inp26"></div>
+            <input type="radio" name="" id="no26" value="no" onchange="siOno.decimoVenteSieteNO()">
+        </div>
+        <div id="BAJADELIZQ">
+            <input type="text" name="nameSecurityElemenstAndServisDetails" id="" readonly value="BAJA DEL IZQ">
+            <input type="radio" name="" id="si27" value="si" onchange="siOno.decimoVenteOchoSi()">
+            <div id="inp27"></div>
+            <input type="radio" name="" id="no27" value="no" onchange="siOno.decimoVenteOchoNO()">
+        </div>
+        <div id="PARKING">
+            <input type="text" name="nameSecurityElemenstAndServisDetails" id="" readonly value="PARKING">
+            <input type="radio" name="" id="si28" value="si" onchange="siOno.decimoVenteNueveSi()">
+            <div id="inp28"></div>
+            <input type="radio" name="" id="no28" value="no" onchange="siOno.decimoVenteNueveNO()">
+        </div>
+        <div id="RETRO">
+            <input type="text" name="nameSecurityElemenstAndServisDetails" id="" readonly value="RETRO">
+            <input type="radio" name="" id="si29" value="si" onchange="siOno.decimoTreintaSi()">
+            <div id="inp29"></div>
+            <input type="radio" name="" id="no29" value="no" onchange="siOno.decimoTreintaNO()">
+        </div>
+    </div>
+
+    <div id="observaciones">
+        <textarea name="observationSecurityElemenstAndServis" id="" aria-checked="true"></textarea>
+    </div>
+
+    <div id="boton">
+        <button type="submit">Guardar</button>
+    </div>
+</form>
+
+<script src="/js/numero.js"></script>
+<script src="/js/implementos/siNo.js"></script>
+<script src="/js/implementos/implementos.js"></script>

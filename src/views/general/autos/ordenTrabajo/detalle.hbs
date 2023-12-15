@@ -1,0 +1,98 @@
+<link rel="stylesheet" href="/css/ordenTrabajo/detalle.css">
+<script src="/js/pdf/html2pdf.bundle.min.js"></script>
+<form action="/cars/ordenTrabajo/detailList/{{user.idUsers}}" method="post">
+    <button id="btnCrearPdf" type="button">
+        <i class="fas fa-file-pdf"></i> Exportar pdf
+    </button>
+    <div id="imagen1">
+        <img src="/img/logos/RACING ISOTIPO VERTICAL.jpg" alt="">
+    </div>
+    <div id="orderWorks">
+        <p>ORDEN N°</p>
+        <p>{{idOderWork}}</p>
+    </div>
+    <div id="solicitantes">
+        <label>solicitante: <p>{{applicantOrderWork}}</p></label>
+    </div>
+    <div id="DatosCarro">
+        <div id="vehiculo">
+            <label>VEHÍCULO N°: <p>{{idCars}}</p></label>
+        </div>
+        <div id="Placa">
+            <label>PLACA: <p>{{licenseplateCars}}</p></label>
+        </div>
+        <div id="Marca">
+            <label>Marca: <p>{{modelCars}}</p></label>
+        </div>
+        <div id="Modelo">
+            <label>Modelo: <p>{{brandCars}}</p></label>
+        </div>
+    </div>
+    <div id="provedor">
+        <div id="Proveedor">
+            <label>PROVEEDOR:</label>
+            <p>{{nameVendor}}</p>
+        </div>
+        <div id="Telefono">
+            <label>TELÉFONO:</label>
+            <p>{{phoneVendor}}</p>
+        </div>
+        <div id="Direccion">
+            <label>DIRECCIÓN:</label>
+            <p>{{addressVendor}}</p>
+        </div>
+    </div>
+    <div id="fecha">
+        <label>Fecha:</label>
+        <p>{{dateOrderWork}}</p>
+    </div>
+    <div id="aproximado">
+        <label>EL VALOR TOTAL ES UN APROXIMADO:</label>
+        <p>{{aproximatePrecie}}</p>
+    </div>
+
+    <div id="imagen">
+        <label>Foto del Daño</label>
+        <div id="cambioImagen">
+            <img src="/img/daños/{{imageOrderWork}}" id="" />
+        </div>
+    </div>
+    <div id="tabala">
+        <table>
+            <tbody>
+                <tr>
+                    <td>CANTIDAD</td>
+                    <td>TIPO</td>
+                    <td>DETALLE</td>
+                    <td>PRECIO UND (INC IVA)</td>
+                    <td>PRECIO TOTAL (INC IVA)</td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>{{amountOrderWork}}</p>
+                    </td>
+                    <td>
+                        <p>{{typeOrderWork}}</p>
+                    </td>
+                    <td>
+                        <p>{{detailOrderWork}}</p>
+                    </td>
+                    <td>
+                        <p>{{unitPriceOrderWork}}</p>
+                    </td>
+                    <td>
+                        <p>{{totalPriceOrderWork}}</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</form>
+
+<div id="boton">
+    {{#each matriculas}}
+    <a href="/cars/matricula/edit/{{idOderWork}}"><button type="button">Actualizar</button></a>
+    {{/each}}
+</div>
+
+<script src="/js/pdf/pdf.js"></script>

@@ -1,0 +1,49 @@
+<link rel="stylesheet" href="/css/autos/lista.css">
+
+<form action="/cars/list/{{user.idUsers}}" method="get" id="ocultar">
+    <div id="contenedor">
+        <div class="row">
+            {{#each list}}
+            <div id="tarjetas">
+                <div id="imagen">
+                    <img src="/img/cars/{{imageCars}}" alt="">
+                </div>
+
+                <div id="matricula">
+                    <p><b>Plataforma:</b> {{nombrePlataforma}}</p>
+                </div>
+
+                <div id="modelo">
+                        <p><b>Contraseña:</b> {{password}}</p>
+                </div>
+
+                    <div id="editar">
+                        <a href="/cars/edit/{{idCars}}">
+                            <button type="button">Actualizar</button>
+                        </a>
+                    </div>
+            </div>
+
+            {{else}}
+            <div id="mensaje">
+                <p>
+                    <b>Usted no tiene registrado ningún contacto de Emergencia.</b>
+                </p>
+                <a href="/cars/add/{{user.idUsers}}">
+                    <button type="button">
+                        ¿Desea ingresar sus contraseñas?
+                    </button>
+                </a>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+
+    <div id="boton">
+        <a href="/cars/add/{{user.idUsers}}">
+            <button type="button">
+                <img src="/img/icons/black/plus.png" id="plus">
+            </button>
+        </a>
+    </div>
+</form>

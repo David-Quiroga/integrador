@@ -1,0 +1,72 @@
+<link rel="stylesheet" href="style.css">
+<form action="/cars/matricula/edit/" method="post">
+    <div id="datosCarro">
+        {{#each }}
+        <div id="marca">
+            <label>Marca:</label>
+            <p></p>
+        </div>
+        <div id="clase">
+            <label>Clase:</label>
+            <p></p>
+        </div>
+        <div id="tipo">
+            <label>Tipo:</label>
+            <p></p>
+        </div>
+        <div id="año">
+            <label>Año:</label>
+            <p></p>
+        </div>
+        <div id="placa">
+            <label>Placa:</label>
+            <p></p>
+        </div>
+        <div id="modelo">
+            <label>Modelo:</label>
+            <p></p>
+        </div>
+        <div id="motor">
+            <label>Motor:</label>
+            <p></p>
+        </div>
+        <div id="chasis">
+            <label>Chasis:</label>
+            <p></p>
+        </div>
+        {{/each}}
+    </div>
+    <div id="tabla">
+        <table>
+            <tbody>
+                <tr>
+                    <td>RTV</td>
+                    <td>COMISION</td>
+                    <td>IMPUESTO SOBRE VEHICULOS</td>
+                    <td>COMISION</td>
+                    <td>MATRICULA</td>
+                    <td>COMISION</td>
+                    <td>FONDO VIAL</td>
+                    <td>COMISION</td>
+                    <td>TOTAL PAGO</td>
+                </tr>
+                <tr>
+                    {{#each }}
+                    <td><input type="text" name="rtvTuitionTax" id="" value="{{rtvTuitionTax}}"></td>
+                    <td><input type="text" name="commissionTuitionTax" id="" value="{{commissionTuitionTax}}"></td>
+                    <td><input type="text" name="vehicleTaxTuitionTax" id="" value="{{vehicleTaxTuitionTax}}"></td>
+                    <td><input type="text" name="commission2TuitionTax" id="" value="{{commission2TuitionTax}}"></td>
+                    <td><input type="text" name="tuitionTuitionTax" id="" value="{{tuitionTuitionTax}}"></td>
+                    <td><input type="text" name="commission3TuitionTax" id="" value="{{commission3TuitionTax}}"></td>
+                    <td><input type="text" name="roadFundRegistrationTax" id="" value="{{roadFundRegistrationTax}}"></td>
+                    <td><input type="text" name="commission4TuitionTax" id="" value="{{commission4TuitionTax}}"></td>
+                    <td><input type="text" name="totalTuitionTax" id="" value="{{totalTuitionTax}}"></td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+        <div id="boton">
+           <a href="/cars/matricula/edit/"><button type="button">Actualizar</button></a>
+        </div>
+    </div>
+</form>

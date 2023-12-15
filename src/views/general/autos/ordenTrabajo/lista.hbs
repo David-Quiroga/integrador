@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="/css/matricula/lista.css">
+<form action="/cars/ordenTrabajo/list/{{user.idUser}}"></form>
+<div id="boton">
+    <a href="/cars/ordenTrabajo/add/{{user.idUser}}"><button type="button"><img src="/img/icons/black/plus.png" alt=""id="plus"></button></a>
+</div>
+
+<div id="contenedor">
+    <div class="row">
+        {{#each orderWorks}}
+        <div id="tarjetas">
+            <div id="id">
+                <p>orden Trabajo</p>
+            </div>
+            <div id="tipo">
+                <p>{{typeOrderWork}}</p>
+            </div>
+            <div id="editar">
+                <a href="/cars/ordenTrabajo/edit/{{idOderWork}}"><button type="button">Actualizar</button></a>
+            </div>
+            <div id="seleccionar">
+                <a href="/cars/ordenTrabajo/detailList/{{idOderWork}}"><button type="button">Detalle</button></a>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>

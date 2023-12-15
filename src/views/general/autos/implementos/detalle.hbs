@@ -1,0 +1,90 @@
+<link rel="stylesheet" href="style.css">
+{{#each seguridad}}
+<form action="/cars/implementos/list/{{idSecurityElemenstAndServis}}" method="post">
+    {{/each}}
+    {{#each cars}}
+    <div id="DatosCarro">
+        <div id="vehiculo">
+            <label>VEHÍCULO N°: <p>{{idCars}}</p></label>
+        </div>
+        <div id="Placa">
+            <label>PLACA: <p>{{licenseplateCars}}</p></label>
+        </div>
+        <div id="Marca">
+            <label>Marca: <p>{{modelCars}}</p></label>
+        </div>
+        <div id="Modelo">
+            <label>Modelo: <p>{{brandCars}}</p></label>
+        </div>
+    </div>
+    {{/each}}
+
+    <div id="primero">
+        <label>CODIGOS DE ESPECIFICACIÓN</label>
+        {{#each codigo}}
+        <p>{{nameSecurityElemenstAndServisDetails}}</p>
+        <p>{{stateSecurityElemenstAndServisDetails}}</p>
+        {{/each}}
+        <div id="observaciones">
+            <label>Observaciones</label>
+            {{#each codigoObservacion}}
+            <p>{{observationSecurityElemenstAndServis}}</p>
+            {{/each}}
+        </div>
+    </div>
+
+    <div id="segundo">
+        <label>NIVELES</label>
+        {{#each niveles}}
+        <p>{{nameSecurityElemenstAndServisDetails}}</p>
+        <p>{{stateSecurityElemenstAndServisDetails}}</p>
+        {{/each}}
+        <div id="observaciones">
+            <label>Observaciones</label>
+            {{#each nivelObservacion}}
+            <p>{{observationSecurityElemenstAndServis}}</p>
+            {{/each}}
+        </div>
+    </div>
+
+    <div id="tercero">
+        <label>ELEMENTOS DE SEGURIDAD Y SERVICIOS</label>
+        {{#each elementos}}
+        <p>{{nameSecurityElemenstAndServisDetails}}</p>
+        <p>{{stateSecurityElemenstAndServisDetails}}</p>
+        {{/each}}
+        <div id="observaciones">
+            <label>Observaciones</label>
+            {{#each elementosObservacion}}
+            <p>{{observationSecurityElemenstAndServis}}</p>
+            {{/each}}
+        </div>
+    </div>
+
+    <div id="cuarto">
+        <label>HERRAMIENTAS</label>
+        {{#each herramientas}}
+        <p>{{nameSecurityElemenstAndServisDetails}}</p>
+        <p>{{stateSecurityElemenstAndServisDetails}}</p>
+        {{/each}}
+        <div id="observaciones">
+            <label>Observaciones</label>
+            {{#each herramientasObservacion}}
+            <p>{{observationSecurityElemenstAndServis}}</p>
+            {{/each}}
+        </div>
+    </div>
+
+    <div id="quinto">
+        <label>LUCES</label>
+        {{#each luces}}
+        <p>{{nameSecurityElemenstAndServisDetails}}</p>
+        <p>{{stateSecurityElemenstAndServisDetails}}</p>
+        {{/each}}
+        <div id="observaciones">
+            <label>Observaciones</label>
+            {{#each lucesObservacion}}
+            <p>{{observationSecurityElemenstAndServis}}</p>
+            {{/each}}
+        </div>
+</form>

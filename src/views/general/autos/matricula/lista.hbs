@@ -1,0 +1,65 @@
+<link rel="stylesheet" href="/css/matricula/lista.css">
+{{#each list}}
+<form action="/cars/matricula/list/{{idCars}}"></form>
+<div id="datosCarro">
+    <div id="marca">
+        <label>Marca:</label>
+        <p>{{brandCars}}</p>
+    </div>
+    <div id="clase">
+        <label>Clase:</label>
+        <p>{{classCars}}</p>
+    </div>
+    <div id="tipo">
+        <label>Tipo:</label>
+        <p>{{typeCars}}</p>
+    </div>
+    <div id="año">
+        <label>Año:</label>
+        <p>{{yearsCars}}</p>
+    </div>
+    <div id="placa">
+        <label>Placa:</label>
+        <p>{{licenseplateCars}}</p>
+    </div>
+    <div id="modelo">
+        <label>Modelo:</label>
+        <p>{{modelCars}}</p>
+    </div>
+    <div id="motor">
+        <label>Motor:</label>
+        <p>{{engineCars}}</p>
+    </div>
+    <div id="chasis">
+        <label>Chasis:</label>
+        <p>{{chassisCars}}</p>
+    </div>
+</div>
+<div id="boton">
+    <a href="/cars/matricula/add/{{idCars}}"><button type="button"><img src="/img/icons/black/plus.png" alt=""id="plus"></button></a>
+</div>
+{{/each}}
+
+<div id="contenedor">
+    <div class="row">
+        {{#each matriculas}}
+        <div id="tarjetas">
+            <div id="id">
+                <p>Matrícula</p>
+            </div>
+            <div id="matricula">
+                <p>{{datelicensePlates}}</p>
+            </div>
+            <div id="editar">
+                <a href="/cars/matricula/edit/{{idlicensePlate}}"><button type="button">Actualizar</button></a>
+            </div>
+            <div id="seleccionar">
+                <a href="/cars/matricula/detailList/{{idlicensePlate}}"><button type="button">Detalle</button></a>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
+
+
+

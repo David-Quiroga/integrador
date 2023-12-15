@@ -1,0 +1,155 @@
+<link rel="stylesheet" href="/css/events/profile.css" type="text/css">
+
+{{#each list}}
+<form action="/profile/{{idClient}}" method="get" id="ocultar">
+    <!-- Aqui empieza el perfil -->
+    <div id="perfil">
+        <div id="imagen">
+            <label>Foto Usuario</label>
+            <div id="cambioImagen">
+                <img src="/img/user/{{imagesClient}}" id="imagenPrevisualizacion">
+            </div>
+        </div>
+        <div id="info">
+            <div id="Nombre">
+                <label>Nombre:
+                    <input name="nameClient" value="{{nameClient}}" id="nombre" readonly></input>
+                </label>
+            </div>
+
+            <div id="Apellido">
+                <label>Apellido:
+                    <input name="lastNameClient" value="{{lastNameClient}}" id="apellido" readonly></input>
+                </label>
+            </div>
+
+            <div id="Email">
+                <label>Correo Electrónico:
+                    <input name="emailClient" value="{{emailClient}}" id="email" readonly></input>
+                </label>
+            </div>
+
+            <div id="Celular">
+                <label>Celular:
+                    <input name="phoneClient" value="{{phoneClient}}" id="celular" readonly></input>
+                </label>
+            </div>
+            <div id="usernameClient">
+                <label>Nick:
+                    <input name="usernameClient" value="{{usernameClient}}" id="celular" readonly></input>
+                </label>
+            </div>
+            <div id="typePersons">
+                <label>Tipo Persona
+                    <input name="" value="{{nameTypePerson}}" id="" readonly></input>
+                </label>
+            </div>
+            <div id="identificationCardClient">
+                <label>Tipo Id:
+                    <input name="identifiacationCardClient" value="{{identificationCardClient}}" id="celular"
+                        readonly></input>
+                </label>
+            </div>
+            <div id="genero">
+                <label>genero
+                    <input name="" value="{{nameGener}}" id="celular" readonly></input>
+                </label>
+            </div>
+            {{/each}}
+        </div>
+        <div id="edit">
+            <a href="">
+                <button type="button">
+                    <div id="iconoLogout">
+                        <img src="/img/icons/white/edit.png">
+                    </div>
+                    <p>Editar</p>
+                </button>
+            </a>
+        </div>
+    </div>
+    <div id="contenedor2">
+        <div id="Evento">
+            <p>Eventos</p>
+        </div>
+        <div class="row">
+            {{#each Eventos}}
+            <div id="tarjetas">
+                <div id="imagenEvento">
+                    <a href="/events/detail/{{idEvent}}">
+                        <img src="/img/events/{{imageEvent}}">
+                    </a>
+                </div>
+                <div id="informacionGeneral">
+                    <p>INFORMACIÓN</p>
+                    <div id="nombreEvento">
+                        <p>{{nameEvent}}</p>
+                    </div>
+                    <div id="modalidad">
+                        <p>{{nameModality}}</p>
+                    </div>
+                    <div id="fechaInicio">
+                        <p>{{dateInitEvent}}</p>
+                    </div>
+                    <div id="fechaFin">
+                        <p>{{dateFinishEvent}}</p>
+                    </div>
+                    <div id="PrecioEvento">
+                        <p>{{priceEvents}}</p>
+                    </div>
+                </div>
+                <div id="botones">
+                    <div id="ubicaion">
+                        <a href="/events/ubicationEvent/{{idEvent}}"><button type="button">
+                                <img src="/img/icons/white/location.png">
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+    <div id="contenedor3">
+        <div id="Evento">
+            <p>Eventos Favoritos</p>
+        </div>
+        <div class="row">
+            {{#each Favoritos}}
+            <div id="tarjetas">
+                <div id="imagenEvento">
+                    <a href="/events/detail/{{idEvent}}">
+                        <img src="/img/events/{{imageEvent}}">
+                    </a>
+                </div>
+                <div id="informacionGeneral">
+                    <p>INFORMACIÓN</p>
+                    <div id="nombreEvento">
+                        <p>{{nameEvent}}</p>
+                    </div>
+                    <div id="modalidad">
+                        <p>{{nameModality}}</p>
+                    </div>
+                    <div id="fechaInicio">
+                        <p>{{dateInitEvent}}</p>
+                    </div>
+                    <div id="fechaFin">
+                        <p>{{dateFinishEvent}}</p>
+                    </div>
+                    <div id="PrecioEvento">
+                        <p>{{priceEvents}}</p>
+                    </div>
+                </div>
+                <div id="botones">
+                    <div id="ubicaion">
+                        <a href="/events/ubicationEvent/{{idEvent}}"><button type="button">
+                                <img src="/img/icons/white/location.png">
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</form>

@@ -1,0 +1,76 @@
+#imagen{
+    margin-top: -90px;
+    margin-left: 10px;
+    width: 70px;
+    height: 70px;
+}
+
+#imagen img{
+    width: 70px;
+    height: 70px;
+}
+
+#Fecha{
+    width: 300px;
+    margin-top: -250px;
+    margin-left: 1400px;
+    text-align: center;
+}
+
+#fechaEntrega{
+    width: 300px;
+    margin-top: 40px;
+    margin-left: 1300px;
+    text-align: center;
+}
+
+#FIRMA{
+    width: 200px;
+    margin-top: 30px;
+    margin-left: 1310px;
+}
+
+#btnCrearPdf{
+    width: 180px;
+    margin-top: 30px;
+    margin-left: 1700px;
+}
+
+#boton{
+    width: 180px;
+}
+
+#texto{
+        text-align: center;
+        width: 800px;
+        margin-top: -15px;
+        margin-left: 400px;
+}
+
+input{
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    background-color: transparent;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+    margin-top: 50px;
+}
+ 
+table,
+th,
+td {
+    border: 1px solid black;
+}
+ 
+th,
+td {
+    padding: 5px;
+}
+a{
+    color: #ffaa00;
+    font-size: 2rem;
+}

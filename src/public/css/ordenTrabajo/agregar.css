@@ -1,0 +1,190 @@
+#orderWorks {
+    position: absolute;
+    top: 2%;
+    left: 90%;
+    width: 100%;
+    max-width: 12%;
+}
+
+#orderWorks p {
+    position: absolute;
+    left: 0%;
+    margin-top: 2.5%;
+}
+
+#orderWorks input {
+    position: absolute;
+    width: 15%;
+    left: 45%;
+}
+
+#solicitantes {
+    position: absolute;
+    top: 2%;
+    left: 1%;
+    width: 20%;
+}
+
+#DatosCarro {
+    position: absolute;
+    top: 10%;
+    left: 1%;
+    width: 15%;
+}
+
+#vehiculo input {
+    margin-top: 2%;
+    width: 15%;
+}
+
+#Placa p {
+    margin-top: 5%;
+}
+
+#Marca p {
+    margin-top: 5%;
+}
+#Modelo p {
+    margin-top: 5%;
+}
+
+#provedor{
+    position: absolute;
+    top: 35%;
+    left: 2%;
+    width: 15%;
+    height: 20%;
+}
+#numeroDeColumnas{
+    position: absolute;
+    width: 20%;
+    top: 7%;
+    left: 78%;
+}
+
+#Proveedor label{
+    position: absolute;
+    left: 2%;
+}
+
+#Telefono label{
+    position: absolute;
+    top: 35%;
+    left: 2%;
+}
+
+#Direccion label{
+    position: absolute;
+    top: 75%;
+    left: 2%;
+}
+
+#Proveedor input{
+    position: absolute;
+    width: 50%;
+    left: 50%;
+}
+
+#Telefono input{
+    position: absolute;
+    width: 50%;
+    top: 35%;
+    left: 50%;
+}
+
+#Direccion input{
+    position: absolute;
+    width: 50%;
+    top: 75%;
+    left: 50%;
+}
+
+#fecha{
+    position: absolute;
+    width: 15%;
+    top: 18%;
+    left: 80%;
+}
+
+#aproximado{
+    position: absolute;
+    width: 15%;
+    top: 27%;
+    left: 80%;
+}
+
+#eleccionImagen{
+position: absolute;
+width: 15%;
+top: 3%;
+left: 40%;
+}
+
+#imagen{
+    position: absolute;
+    width: 10%;
+    top: 15%;
+    left: 42%;
+}
+
+#si,
+#no{
+    position: absolute;
+    top: 100%;
+    left: 30%;
+}
+
+#no{
+    left: 60%;
+}
+
+#si input,
+#no input{
+    position: absolute;
+}
+
+table{
+    border: 1px solid black;
+    text-align: center;
+    width: 90%;
+    position: absolute;
+    left: 5%;
+    top: 60%;
+}
+tr,
+td{
+    border: 1px solid black;
+}
+
+#boton {
+    width: 3%;
+    height: 5%;
+    position: absolute;
+    top: 39%;
+    right: 6%;
+}
+
+#boton button {
+    text-align: right;
+    background-color: #0097e7;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#iconoGuardar {
+    background-color: #1232bd;
+    border-radius: 10%;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: 0%;
+    margin-top: 0%;
+}
+
+#iconoGuardar img {
+    max-width: 100%;
+    max-height: 100%;
+}

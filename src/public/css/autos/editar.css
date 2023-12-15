@@ -1,0 +1,420 @@
+#contenedor {
+    width: 100%;
+    height: 100%;
+    max-width: 90%;
+    max-height: 80%;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    text-align: center;
+}
+
+#titulo {
+    width: 100%;
+    position: absolute;
+    top: 7.5%;
+}
+
+#titulo input {
+    display: none;
+    font-weight: bolder;
+    position: absolute;
+    top: -2.5%;
+    left: 57.5%;
+    width: 5%;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+#titulo input:focus {
+    border-color: transparent;
+}
+
+
+/* IMAGEN DEL VEHICULO */
+#imagenCarro {
+    width: 100%;
+    height: 100%;
+    max-width: 17.5%;
+    max-height: 56.5%;
+    position: absolute;
+    right: 5%;
+    top: 15%;
+    background-color: #ffffff70;
+    border-radius: 10px;
+}
+
+#imagenCarro label {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 10%;
+    color: black;
+    position: absolute;
+    top: 3.25%;
+    left: 0%;
+    text-align: center;
+}
+
+#imagenPrevisualizacion,
+#imagenAnterior {
+    width: 100%;
+    height: 100%;
+    max-width: 70%;
+    max-height: 45%;
+    position: absolute;
+    top: 16.5%;
+    left: 15%;
+    border-radius: 10px;
+}
+
+#imagenCarro #cambioImagen img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+#imagenCarro #cambioImagen #imagenPrevisualizacion {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#imagenCarro input {
+    width: 80%;
+    height: 8%;
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
+}
+
+#imagenCarro #eleccion {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 20%;
+    position: absolute;
+    left: 0%;
+    top: 67.5%;
+}
+
+#imagenCarro #eleccion label {
+    width: 100%;
+    max-height: 50%;
+    top: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#imagenCarro #eleccion input {
+    width: 100%;
+    height: 100%;
+    max-width: 10%;
+    max-height: 20%;
+    position: absolute;
+    left: 15%;
+    top: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#imagenCarro #eleccion #no {
+    left: 60%;
+}
+
+#imagenCarro #eleccion #pSi,
+#imagenCarro #eleccion #pNo {
+    width: 100%;
+    height: 100%;
+    max-width: 10%;
+    max-height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#imagenCarro #eleccion #pNo {
+    left: 70%;
+}
+
+/* Aquí comienza formulario */
+#formulario {
+    background-color: #ffffff70;
+    width: 67.5%;
+    height: 80%;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    border-radius: 10px;
+}
+
+#Placa,
+#Marca,
+#Modelo,
+#Color,
+#Chasis,
+#Motor,
+#Año,
+#FechaMatricula,
+#FechaCasudidad,
+#Clase {
+    line-height: center;
+    width: 100%;
+    height: 100%;
+    max-width: 35%;
+    max-height: 6.5%;
+    position: absolute;
+    left: 10%;
+    top: 17.5%;
+}
+
+#Marca,
+#Color,
+#Motor,
+#FechaCasudidad,
+#Clase {
+    left: 55%;
+}
+
+#Modelo,
+#Color {
+    top: 32.5%;
+}
+
+#Chasis,
+#Motor {
+    top: 47.5%;
+}
+
+#Año,
+#Clase {
+    top: 62.5%;
+}
+
+#FechaMatricula,
+#FechaCasudidad {
+    top: 77.5%;
+}
+
+#Placa input,
+#Marca input,
+#Modelo input,
+#Color input,
+#Chasis input,
+#Motor input,
+#Año input,
+#FechaMatricula input,
+#FechaCasudidad input,
+#Clase select {
+    height: 100%;
+}
+
+/* BOTON */
+#boton {
+    width: 17.5%;
+    height: 8.50%;
+    position: absolute;
+    bottom: 15%;
+    right: 5%;
+}
+
+#boton button {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* RESPONSIVE */
+@media only screen and (orientation: landscape) and (max-width: 1200px) and (min-width: 667px) {
+    #contenedor {
+        height: 135%;
+        max-height: 135%;
+        max-width: 90%;
+        top: 7.5%;
+        left: 5%;
+    }
+
+    #formulario {
+        width: 93%;
+        height: 57.5%;
+        top: 4%;
+        left: 3.5%;
+    }
+
+    #imagenCarro {
+        min-width: 35%;
+        height: 31.25%;
+        top: 63.75%;
+        left: 15%;
+    }
+
+    #boton {
+        right: 15%;
+    }
+}
+
+@media only screen and (orientation: portrait) and (max-width: 1200px) and (min-width: 667px) {
+    #contenedor {
+        height: 135%;
+        max-height: 135%;
+        max-width: 90%;
+        top: 7.5%;
+        left: 5%;
+    }
+
+    #formulario {
+        width: 93%;
+        height: 57.5%;
+        top: 4%;
+        left: 3.5%;
+    }
+
+    #imagenCarro {
+        min-width: 35%;
+        height: 31.25%;
+        top: 63.75%;
+        left: 15%;
+    }
+
+    #boton {
+        right: 15%;
+    }
+}
+
+@media only screen and (orientation: portrait) and (max-width: 667px) and (min-width: 0px) {
+    #contenedor {
+        height: 170%;
+        max-height: 170%;
+        top: 2.5%;
+    }
+
+    #formulario {
+        width: 90%;
+        height: 66%;
+        top: 2.5%;
+        left: 5%;
+    }
+
+    #titulo {
+        top: 2.5%;
+    }
+
+    #Placa,
+    #Marca,
+    #Modelo,
+    #Color,
+    #Chasis,
+    #Motor,
+    #Año,
+    #FechaMatricula,
+    #FechaCasudidad,
+    #Clase {
+        max-width: 90%;
+        left: 5%;
+        top: 7.5%;
+    }
+
+    #Marca {
+        top: 16.5%;
+    }
+
+    #Modelo {
+        top: 25.5%;
+    }
+
+    #Color {
+        top: 34.5%;
+    }
+
+    #Chasis {
+        top: 43.5%;
+    }
+
+    #Motor {
+        top: 52.5%;
+    }
+
+    #Año {
+        top: 61.5%;
+    }
+
+    #Clase {
+        top: 70.5%;
+    }
+
+    #FechaMatricula {
+        top: 79.5%;
+    }
+
+    #FechaCasudidad {
+        top: 88.5%;
+    }
+
+    #Marca input,
+    #Modelo input,
+    #FechaMatricula input,
+    #FechaCasudidad input,
+    #Clase select,
+    #Color input,
+    #Chasis input,
+    #Motor input,
+    #Año input,
+    #Placa input {
+        height: 75%;
+    }
+
+    #imagenCarro {
+        left: 15%;
+        top: 69.5%;
+        max-width: 70%;
+        max-height: 22.5%;
+    }
+
+    #imagenCarro #eleccion {
+        top: 62.5%;
+    }
+
+    #imagenCarro input {
+        height: 11.5%;
+    }
+
+    #boton {
+        bottom: 2.5%;
+        left: 15%;
+        width: 70%;
+        height: 4.25%;
+    }
+}
+/* RESPONSIVE */
+@media only screen and (orientation: portrait) and (max-width: 1000px) and (min-width: 667px) {
+    #contenedor {
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+        left: 0%;
+    }
+}
+
+@media only screen and (orientation: portrait) and (max-width: 667px) and (min-width: 384px) {
+    #contenedor {
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+        left: 0%;
+    }
+}
+
+@media only screen and (orientation: portrait) and (max-width: 384px) and (min-width: 150px) {
+    #contenedor {
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+        left: 0%;
+    }
+}

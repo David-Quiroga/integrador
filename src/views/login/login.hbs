@@ -1,0 +1,39 @@
+<!-- Required meta tags -->
+<link rel="stylesheet" href="/css/usuarios/login.css" type="text/css">
+
+<form action="/Login" method="post" id="ocultar">
+    <div id="contenedor">
+        <div id="titulo">
+            <h1>Iniciar Sesión</h1>
+        </div>
+
+        <div id="imagen">
+            <img src="/img/portada/Portada 3.png" alt="">
+        </div>
+
+        <div id="Email">
+            <input id="nombreIntxt" type="userName" name="username" placeholder="Usuario" required>
+        </div>
+
+        <div id="Password">
+            <input id="passIntxt" type="password" name="password" placeholder="Contraseña" required>
+        </div>
+
+        <div id="ojo">
+            <button id="visto" type="button" onclick="boton.cambio()">
+                <img src="/img/icons/white/eyes.png">
+            </button>
+            <button id="equis" type="button" onclick="boton.cambio2()">
+                <img src="/img/icons/white/cerrado.png">
+            </button>
+        </div>
+
+        <div id="botonIniciarSesion">
+            <button type="sumbit">
+                Iniciar Sesión
+            </button>
+        </div>
+    </div>
+</form>
+
+<script src="/js/usuarios/login.js"></script>

@@ -1,0 +1,63 @@
+<link rel="stylesheet" href="/css/usuarios/registro.css" type="text/css">
+
+<div id="imagen">
+    <img src="/img/portada/Portada 2.png" alt="">
+</div>
+
+<form action="/register" method="post" id="ocultar">
+    <!-- Aquí comienza el formulario -->
+    <div id="contenedor">
+        <div id="titulo">
+            <p>Registro</p>
+        </div>
+
+        <div id="nombreUsuario">
+            <label>Nombre Completo:</label>
+            <input type="text" name="namesUser" id="" required>
+        </div>
+
+        <div id="identificacion">
+            <label>Identificación:</label>
+            <input type="text" name="identificationCardUser" id="" required>
+        </div>
+
+        <div id="correoUsuario">
+            <label>Correo Electrónico:</label>
+            <input type="text" name="emailUser" id="" required>
+        </div>
+
+        <div id="celularUsuario">
+            <label>Celular:</label>
+            <input type="text" name="phoneUser" id="" required>
+        </div>
+
+        <div id="Nick">
+            <label>Usuario:</label>
+            <input type="text" name="username" id="" required>
+        </div>
+
+        <div id="Contraseña">
+            <label>Contraseña:</label>
+            <input type="password" name="password" id="passIntxt" required>
+        </div>
+
+        <div id="ojo">
+            <button id="visto" type="button" onclick="boton.cambio()">
+                <img src="/img/icons/white/eyes.png">
+            </button>
+            
+            <button id="equis" type="button" onclick="boton.cambio2()">
+                <img src="/img/icons/white/cerrado.png">
+            </button>
+        </div>
+
+        <div id="boton">
+            <button type="submit">
+                Guardar
+            </button>
+        </div>
+    </div>
+    <!-- Aquí termina el formulario -->
+</form>
+
+<script src="/js/usuarios/login.js"></script>

@@ -1,0 +1,105 @@
+<link rel="stylesheet" href="/css/partials/navegacion.css" type="text/css">
+
+<nav id="nav">
+{{#if user}}
+    <div id="cierra">
+        <a onclick="menus.botonMenu()">
+            <button type="button">
+                <img src="/img/icons/white/menu.png" />
+            </button>
+        </a>
+    </div>
+
+    <div id="homeImg">
+        <a href="/events/list/">
+            <img src="/img/logos/Logo_CIty_Boletos con Perfil.png">
+        </a>
+    </div>
+
+    <div id="busqueda" class="search">
+        <input type="text" placeholder="Buscar" name="search">
+        <button type="button">
+            <div id="iconoBuscar">
+                <img src="/img/icons/white/search.png">
+            </div>
+        </button>
+    </div>
+
+    <div id="botonPublicate">
+        <a href="/events/categoryList/{{user.idClient}}">
+            <button type="button">
+                <div id="iconoPublicate">
+                    <img src="/img/icons/white/calendar.png">
+                </div><p>Publicar Evento</p>
+            </button>
+        </a>
+    </div>
+
+    <div id="botonProfile">
+        <a href="/profile/{{user.idClient}}">
+            <button type="button">
+                <div id="iconoProfile">
+                    <img src="/img/icons/white/user.png">
+                </div><p>Perfil</p>
+            </button>
+        </a>
+    </div>
+        <div id="botonCloseSesion">
+        <a href="/logout">
+            <button type="button">
+                <div id="iconoClose">
+                    <img src="/img/icons/white/logout.png">
+                </div><p>Salir</p>
+            </button>
+        </a>
+    </div>
+
+    {{else}}
+     <div id="homeImg">
+        <a href="/">
+            <img src="/img/logos/Logo_CIty_Boletos con Perfil.png" >
+        </a>
+    </div>
+
+    <div id="busqueda" class="search">
+        <form action="#">
+            <input type="text" placeholder="Buscar" name="search">
+            <button type="button">
+                <div id="iconoBuscar">
+                    <img src="/img/icons/white/search.png">
+                </div>
+            </button>
+        </form>
+    </div>
+
+    <div id="botonLogin">
+        <a href="/login">
+            <button type="button">
+                <div id="iconoLogin">
+                    <img src="/img/icons/white/login.png">
+                </div><p>Iniciar Sesión</p>
+            </button>
+        </a>
+    </div>
+
+    <div id="botonRegister">
+        <a href="/register">
+            <button type="button">
+                <div id="iconoRegister">
+                    <img src="/img/icons/white/login.png">
+                </div><p>Registrate</p>
+            </button>
+        </a>
+    </div>
+
+ <div id="hamburguesa">
+        <a onclick="menus.aparicion()">
+            <button type="button">
+                <img src="/img/icons/white/cross.png" />
+            </button>
+        </a>
+    </div>
+    {{/if}}
+</nav>
+
+<script src="/js/navegacion.js"></script>

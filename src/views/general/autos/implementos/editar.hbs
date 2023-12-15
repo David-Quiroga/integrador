@@ -1,0 +1,54 @@
+<link rel="stylesheet" href="style.css">
+{{#each seguridad}}
+<form action="/cars/implementos/list/{{idSecurityElemenstAndServis}}" method="post">
+{{/each}}
+{{#each cars}}
+    <div id="DatosCarro">
+        <div id="vehiculo">
+            <label>VEHÍCULO N°: <p>{{idCars}}</p></label>
+        </div>
+        <div id="Placa">
+            <label>PLACA: <p>{{licenseplateCars}}</p></label>
+        </div>
+        <div id="Marca">
+            <label>Marca: <p>{{modelCars}}</p></label>
+        </div>
+        <div id="Modelo">
+            <label>Modelo: <p>{{brandCars}}</p></label>
+        </div>
+    </div>
+{{/each}}
+{{#each detalle}}
+    <div id="datos">
+        <div id="primero">
+            <label>CODIGOS DE ESPECIFICACIÓN</label>
+            <p>{{nameSecurityElemenstAndServis}}
+            <p>{{stateSecurityElemenstAndServis}}</p>
+        </div>
+        <div id="segundo">
+            <label>NIVELES</label>
+            <p>{{nameSecurityElemenstAndServis}}</p>
+            <p>{{stateSecurityElemenstAndServis}}</p>
+        </div>
+        <div id="tercero">
+            <label>ELEMENTOS DE SEGURIDAD  Y SERVICIOS</label>
+            <p>{{nameSecurityElemenstAndServis}}</p>
+            <p>{{stateSecurityElemenstAndServis}}</p>
+        </div>
+        <div id="cuarto">
+            <label>HERRAMIENTAS</label>
+            <p>{{nameSecurityElemenstAndServis}}</p>
+            <p>{{stateSecurityElemenstAndServis}}</p>
+        </div>
+        <div id="quinto">
+            <label>LUCES</label>
+            <p>{{nameSecurityElemenstAndServis}}</p>
+            <p>{{stateSecurityElemenstAndServis}}</p>
+        </div>
+    </div>
+    <div id="observaciones">
+        <label>Observaciones</label>
+        <p>{{observationSecurityElemenstAndServis}}</p>
+    </div>
+</form>
+{{/each}}

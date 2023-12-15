@@ -1,0 +1,80 @@
+<link rel="stylesheet" href="/css/matricula/editar.css">
+{{#each list}}
+<form action="/cars/matricula/edit/{{idCars}}" method="post">
+    <div id="datosCarro">
+        <div id="marca">
+            <label>Marca:</label>
+            <p>{{brandCars}}</p>
+        </div>
+        <div id="clase">
+            <label>Clase:</label>
+            <p>{{classCars}}</p>
+        </div>
+        <div id="tipo">
+            <label>Tipo:</label>
+            <p>{{typeCars}}</p>
+        </div>
+        <div id="año">
+            <label>Año:</label>
+            <p>{{yearsCars}}</p>
+        </div>
+        <div id="placa">
+            <label>Placa:</label>
+            <p>{{licenseplateCars}}</p>
+        </div>
+        <div id="modelo">
+            <label>Modelo:</label>
+            <p>{{modelCars}}</p>
+        </div>
+        <div id="motor">
+            <label>Motor:</label>
+            <p>{{engineCars}}</p>
+        </div>
+        <div id="chasis">
+            <label>Chasis:</label>
+            <p>{{chassisCars}}</p>
+        </div>
+    </div>
+{{/each}}
+    <table>
+        <tbody>
+            <tr>
+                <td>Fecha</td>
+                <td>AÑO MATRICULA</td>
+                <td>FECHA CADUCA MATRICULA</td>
+                <td>A NOMBRE DE</td>
+                <td>RTV</td>
+                <td>COMISION</td>
+                <td>IMPUESTO SOBRE VEHICULOS</td>
+                <td>COMISION</td>
+                <td>MATRICULA</td>
+                <td>COMISION</td>
+                <td>FONDO VIAL</td>
+                <td>COMISION</td>
+                <td>TOTAL PAGO</td>
+            </tr>
+            <tr>
+                {{#each matriculas}}
+                <td><input type='date' name='datelicensePlates' id='' value="{{datelicensePlates}}"></td>
+                <td><input type='text' name='registrationYearLicensePlates' id=''
+                        value="{{registrationYearLicensePlates}}"></td>
+                <td><input type='text' name='registrationExpirationDateLicensePlates' id=''
+                        value="{{registrationExpirationDateLicensePlates}}"></td>
+                <td><input type='text' name='toNameLicensePlates' id='' value="{{toNameLicensePlates}}"></td>
+                <td><input type="text" name="rtvTuitionTax" id="" value="{{rtvTuitionTax}}"></td>
+                <td><input type="text" name="commissionTuitionTax" id="" value="{{commissionTuitionTax}}"></td>
+                <td><input type="text" name="vehicleTaxTuitionTax" id="" value="{{vehicleTaxTuitionTax}}"></td>
+                <td><input type="text" name="commission2TuitionTax" id="" value="{{commission2TuitionTax}}"></td>
+                <td><input type="text" name="tuitionTuitionTax" id="" value="{{tuitionTuitionTax}}"></td>
+                <td><input type="text" name="commission3TuitionTax" id="" value="{{commission3TuitionTax}}"></td>
+                <td><input type="text" name="roadFundRegistrationTax" id="" value="{{roadFundRegistrationTax}}"></td>
+                <td><input type="text" name="commission4TuitionTax" id="" value="{{commission4TuitionTax}}"></td>
+                <td><input type="text" name="totalTuitionTax" id="" value="{{totalTuitionTax}}"></td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+    <div id="boton">
+        <button type="submit">Actualizar</button>
+    </div>
+</form>
