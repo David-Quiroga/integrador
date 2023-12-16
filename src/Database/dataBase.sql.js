@@ -5,15 +5,15 @@ const dotenv = require('dotenv');
 dotenv.config();
 
 const{ MYSQLHOST, MYSQLUSER, MYSQLPASSWORD, MYSQLDATABASE, MYSQLPORT, MYSQL_URI, } = require ("../keys");
-  
-  const pool = createPool ({
-      user: MYSQLUSER,
-      password: MYSQLPASSWORD,
-      host: MYSQLHOST,
-      port: MYSQLPORT,
-      database: MYSQLDATABASE,
-      uri: MYSQL_URI
-  })
+
+const pool = createPool ({
+    user: MYSQLUSER,
+    password: MYSQLPASSWORD,
+    host: MYSQLHOST,
+    port: MYSQLPORT,
+    database: MYSQLDATABASE,
+    uri: MYSQL_URI
+})
 
 pool.getConnection((err, conecction)=>{
     if(err){

@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="/css/autos/lista.css">
-
-<form action="/cars/list/{{user.idUsers}}" method="get" id="ocultar">
+<body>
+    <form action="/cars/list/{{user.idUsers}}" method="get" id="ocultar">
     <div id="contenedor">
         <div class="row">
             {{#each list}}
@@ -17,6 +17,13 @@
                         <p><b>Contraseña:</b> {{password}}</p>
                 </div>
 
+                <div id="plataforma">
+                    <p><b>Correo Electronico:</b> {{correoElectronico}}</p>
+                </div> 
+                <div>
+                    <p><b>Tipo de Plataforma:</b> {{categoria}}</p>
+                </div>
+
                     <div id="editar">
                         <a href="/cars/edit/{{idCars}}">
                             <button type="button">Actualizar</button>
@@ -26,9 +33,6 @@
 
             {{else}}
             <div id="mensaje">
-                <p>
-                    <b>Usted no tiene registrado ningún contacto de Emergencia.</b>
-                </p>
                 <a href="/cars/add/{{user.idUsers}}">
                     <button type="button">
                         ¿Desea ingresar sus contraseñas?
@@ -47,3 +51,4 @@
         </a>
     </div>
 </form>
+</body>

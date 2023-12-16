@@ -5,9 +5,12 @@ const Cars = (sequelize, type) => {
             primaryKey: true,
             autoIncrement: true
         },
-        imageCars: type.STRING,
         nombrePlataforma: type.STRING,
+        correoElectronico: type.STRING,
         password: type.STRING,
+        imageCars: type.STRING,
+        categoria:type.STRING,
+        
         creatCars: {
             type: 'TIMESTAMP',
             defaultValue: type.literal('CURRENT_TIMESTAMP'),

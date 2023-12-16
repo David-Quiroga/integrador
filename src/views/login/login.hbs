@@ -1,39 +1,52 @@
 <!-- Required meta tags -->
 <link rel="stylesheet" href="/css/usuarios/login.css" type="text/css">
 
-<form action="/Login" method="post" id="ocultar">
-    <div id="contenedor">
-        <div id="titulo">
-            <h1>Iniciar Sesión</h1>
-        </div>
+<body>
+    <nav>
+        <img class="image" src="/img/logo.png" alt="Security Vault" height="60px">
+        <ul>
+            <li><a href="/">Home</a></li>
+        </ul>
+    </nav>
 
-        <div id="imagen">
-            <img src="/img/portada/Portada 3.png" alt="">
-        </div>
+    <form action="/Login" method="post" id="ocultar">
+        <div class="contenedor">
+            <div id="titulo">
+                <h1>Iniciar Sesión</h1>
+            </div>
 
-        <div id="Email">
-            <input id="nombreIntxt" type="userName" name="username" placeholder="Usuario" required>
-        </div>
+            {{!-- <div id="imagen">
+                <img src="/img/portada/Portada 3.png" alt="">
+            </div> --}}
 
-        <div id="Password">
-            <input id="passIntxt" type="password" name="password" placeholder="Contraseña" required>
-        </div>
+            <div>
+                <label class="usuario">Usuario</label>
+                <input class="input-usuario" id="nombreIntxt" type="userName" name="username" placeholder="Usuario" required>
+            </div>
 
-        <div id="ojo">
-            <button id="visto" type="button" onclick="boton.cambio()">
-                <img src="/img/icons/white/eyes.png">
-            </button>
-            <button id="equis" type="button" onclick="boton.cambio2()">
-                <img src="/img/icons/white/cerrado.png">
-            </button>
-        </div>
+            <div >
+                <label class="contraseña">Contraseña:</label>
+                <input class="input-contraseña" type="password" name="password" placeholder="Contraseña" required>
+            </div>
 
-        <div id="botonIniciarSesion">
-            <button type="sumbit">
-                Iniciar Sesión
-            </button>
+            {{!-- <div id="ojo">
+                <button id="visto" type="button" onclick="boton.cambio()">
+                    <img src="/img/icons/white/eyes.png">
+                </button>
+                <button id="equis" type="button" onclick="boton.cambio2()">
+                    <img src="/img/icons/white/cerrado.png">
+                </button>
+            </div> --}}
+
+            <div >
+                <button class="botonIniciarSesion" type="sumbit">
+                    Iniciar Sesión
+                </button>
+            </div>
         </div>
-    </div>
-</form>
+    </form>
+</body>
+
+
 
 <script src="/js/usuarios/login.js"></script>

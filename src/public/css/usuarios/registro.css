@@ -1,142 +1,181 @@
-#contenedor {
-    width: 40%;
-    height: 90%;
-    position: absolute;
-    top: 5%;
-    left: 5%;
-    text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
 }
-
-/* IMAGEN */
-#imagen {
-    width: 42.5%;
-    height: 90%;
-    position: absolute;
-    top: 5%;
-    right: 5%;
-    border-radius: 25px;
-    border: white solid 2px;
+body{
+    background-color: #f5f5dc9d;
 }
-
-#imagen img {
-    border-radius: 25px;
+nav ul {
+    display:  flex;
+    list-style: none;
 }
-
-#titulo {
-    width: 50%;
-    position: absolute;
-    left: 25%;
-    top: 5%;
+nav ul li{
+    margin: 0 5px;
 }
-
-#titulo p {
-    font-size: 30px;
+nav ul li a{
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 8px 10px;
+    transition: all 0.3s ease;
 }
-
-/* Aquí comienza formulario */
-#formulario {
-    background-color: white;
-    width: 90%;
-    height: 90%;
-    position: absolute;
-    top: 5%;
-    left: 5%;
-    border-radius: 10px;
-    border: 2px double;
+a:hover{
+    text-decoration: none;
+    color: #000;
 }
-
-#nombreUsuario,
-#identificacion,
-#correoUsuario,
-#celularUsuario,
-#Nick,
-#Contraseña {
-    width: 100%;
-    height: 100%;
-    max-width: 90%;
-    max-height: 10%;
-    position: absolute;
-    left: 5%;
-    top: 14%;
+nav ul li a:hover,
+nav ul li a:active{
+    color: #1b1b1b;
+    background: #87be66;
+    text-decoration: none;
 }
-
-#nombreUsuario {
-    top: 25.5%;
+nav #menu-btn i{
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
 }
-
-#correoUsuario {
-    top: 37%;
-}
-
-#celularUsuario {
-    top: 48.5%;
-}
-
-#Nick {
-    top: 60%;
-}
-
-#Contraseña {
-    top: 71.5%;
-}
-
-#ojo {
-    width: 100%;
-    height: 100%;
-    max-width: 7%;
-    max-height: 7%;
-    position: absolute;
-    top: 73%;
-    left: 88%;
-}
-
-#nombreUsuario label,
-#identificacion label,
-#correoUsuario label,
-#celularUsuario label,
-#Nick label,
-#Contraseña label {
-    color: black;
-    width: 100%;
-    height: 100%;
-    max-width: 27.5%;
-    max-height: 100%;
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    text-align: right;
+nav {
+    height: 80px;
+    background: rgb(255, 255, 255);
     display: flex;
-    justify-content: right;
     align-items: center;
+    justify-content: space-between;
 }
-
-#nombreUsuario input,
-#identificacion input,
-#correoUsuario input,
-#celularUsuario input,
-#Nick input,
-#Contraseña input {
-    width: 100%;
-    height: 100%;
-    max-width: 67.5%;
-    max-height: 70%;
-    position: absolute;
-    top: 15%;
-    right: 0%;
+a{
+    position: relative;
+    top: 8px;
+    left: 1300px;
+    text-decoration: none;
 }
-
-#boton {
-    width: 30%;
-    height: 7.5%;
-    position: absolute;
-    bottom: 5%;
-    left: 40%;
+.image{
+    position: fixed;
+    left: 43px;
 }
-
-#boton button {
+.contenedor{
     text-align: center;
-    width: 100%;
-    height: 100%;
-    max-width: 100%;
-    max-height: 100%;
+    position: fixed;
+    top: 120px;
+    left: 320px;
+    background-color: #1b1b1b94;
+    width: 450px;
+    height: 510px;
+}
+h1{
+    color: #fff;
+}
+#titulo{
+    position: fixed;
+    top: 120px;
+    left: 460px;
+}
+.boton{
+    position: fixed;
+    font-weight:100px;
+    top: 500px;
+    left: 500px;
+    background-color: #90d47f;
+    width: 110px;
+    height: 30px;
+    border: 1px;
+}
+.nombreUsuario{
+    position: fixed;
+    top: 182px;
+    left: 350px;
+    font-size: 20px;
+    color: #fff;
+}
+.input-nombre{
+    position: fixed;
+    top: 180px;
+    left: 530px;
+    width: 200px;
+    height: 40px;
+    padding-left: 10px;
+}
+.identificacion{
+    position: fixed;
+    top: 234px;
+    left: 350px;
+    font-size: 20px;
+    color: #fff;
+}
+.input-identificacion{
+    position: fixed;
+    top: 230px;
+    left: 530px;
+    width: 200px;
+    height: 40px;
+    padding-left: 10px;
+}
+.correoUsuario{
+    position: fixed;
+    top: 288px;
+    left: 350px;
+    font-size: 20px;
+    color: #fff;
+}
+.input-correo{
+    position: fixed;
+    top: 280px;
+    left: 530px;
+    width: 200px;
+    height: 40px;
+    padding-left: 10px;
+}
+.celularUsuario{
+    position: fixed;
+    top: 340px;
+    left: 350px;
+    font-size: 20px;
+    color: #fff;
+}
+.input-celular{
+    position: fixed;
+    top: 330px;
+    left: 530px;
+    width: 200px;
+    height: 40px;
+    padding-left: 10px;
+}
+.Nick{
+    position: fixed;
+    top: 390px;
+    left: 350px;
+    font-size: 20px;
+    color: #fff;
+}
+.input-nick{
+    position: fixed;
+    top: 380px;
+    left: 530px;
+    width: 200px;
+    height: 40px;
+    padding-left: 10px;
+}
+.Contraseña{
+    position: fixed;
+    top: 440px;
+    left: 350px;
+    font-size: 20px;
+    color: #fff;
+}
+.input-contraseña{
+    position: fixed;
+    top: 430px;
+    left: 530px;
+    width: 200px;
+    height: 40px;
+    padding-left: 10px;
+}
+.imagen{
+    position: fixed;
+    top: 120px;
+    left: 770px;
 }

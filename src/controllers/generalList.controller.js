@@ -19,11 +19,13 @@ generalList.showCarsAdd = async (req, res) => {
 }
 generalList.sendCarsadd = async (req, res) => {
     const id = req.user.idUsers
-    const { idCarro, nombrePlataforma, imageCars, password } = req.body
+    const { idCarro, nombrePlataforma, correoElectronico, imageCars, password, categoria } = req.body
     const newSend = {
         nombrePlataforma,
         imageCars,
         password,
+        correoElectronico,
+        categoria,
         userIdUsers: id
     }
     await orm.platform.create(newSend)

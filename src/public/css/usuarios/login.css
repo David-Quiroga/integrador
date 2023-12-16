@@ -1,76 +1,118 @@
-#contenedor {
-    width: 100%;
-    height: 100%;
-    max-width: 50%;
-    max-height: 80%;
-    position: absolute;
-    top: 10%;
-    left: 25%;
-    border-top-right-radius: 35%;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
 }
-
-#imagen {
-    width: 100%;
-    height: 100%;
-    max-width: 100%;
-    max-height: 50%;
-    position: absolute;
-    top: 0%;
-    left: 0%;
-}
-
-#imagen img {
-    width: 100%;
-    height: 100%;
+body{
+    background-image: url("/img/background_2.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; 
     background-attachment: fixed;
-    border-top-right-radius: 35%;
-    border-top-left-radius: 9px;
-    border-bottom-right-radius: 0%;
-    border-bottom-left-radius: 45%;
 }
-
-#titulo {
-    width: 100%;
-    position: absolute;
-    top: 55%;
+.contenedor{
+    text-align: center;
+    position: fixed;
+    top: 180px;
+    left: 530px;
+    background-color: #1b1b1b1f;
+    width: 400px;
+    height: 470px;
 }
-
-/* Formulario */
-#Email {
-    width: 100%;
-    position: absolute;
-    top: 65%;
-    left: 0%;
+#titulo{
+    position: fixed;
+    top: 220px;
+    left: 610px;
 }
-
-#Password {
-    width: 100%;
-    position: absolute;
-    top: 75%;
-    left: 0%;
+.usuario{
+    position: fixed;;
+    top: 280px;
+    left: 560px;
+    font-size: 30px;
 }
-
-input {
-    width: 50%;
-    height: 50px;
-    position: absolute;
-    left: 25%;
+.input-usuario{
+    position: fixed;
+    top: 330px;
+    left: 560px;
+    width: 330px;
+    height: 40px;
+    padding-left: 10px;
 }
-
-/* Botones */
-#ojo {
-    width: 100%;
-    height: 100%;
-    max-width: 6%;
-    max-height: 50px;
-    position: absolute;
-    top: 75%;
-    left: 69%;
+.contraseña{
+    position: fixed;;
+    top: 380px;
+    left: 560px;
+    font-size: 30px;
 }
-
-#botonIniciarSesion {
+.input-contraseña{
+    position: fixed;
+    top: 430px;
+    left: 560px;
+    width: 330px;
+    height: 40px;
+    padding-left: 10px;
+}
+.botonIniciarSesion{
+    position: fixed;
+    font-weight:100px;
+    top: 500px;
+    left: 680px;
+    background-color: #90d47f;
+    width: 110px;
+    height: 30px;
+    border: 1px;
+}
+nav ul {
+    display:  flex;
+    list-style: none;
+}
+nav ul li{
+    margin: 0 5px;
+}
+nav ul li a{
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 8px 10px;
+    transition: all 0.3s ease;
+}
+a:hover{
+    text-decoration: none;
+    color: #000;
+}
+nav ul li a:hover,
+nav ul li a:active{
+    color: #1b1b1b;
+    background: #87be66;
+    text-decoration: none;
+}
+nav #menu-btn i{
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+}
+nav {
+    height: 80px;
+    background: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+a{
+    position: relative;
+    top: 8px;
+    left: 1300px;
+    text-decoration: none;
+}
+.image{
+    position: fixed;
+    left: 43px;
+}
+/* #botonIniciarSesion {
     width: 100%;
     height: 100%;
     max-width: 40%;
@@ -79,58 +121,9 @@ input {
     bottom: 5%;
     left: 30%;
     border-radius: 10px;
-}
+} */
 
-#botonIniciarSesion button {
+/* #botonIniciarSesion button {
     max-width: 100%;
     max-height: 100%;
-}
-
-/* RESPONSIVE */
-@media only screen and (orientation: landscape) and (max-width: 1300px) and (min-width: 1000px) {
-    #contenedor {
-        width: 60%;
-        left: 20%;
-    }
-
-    #ojo {
-        max-width: 7.5%;
-        left: 67.5%;
-    }
-}
-
-@media only screen and (orientation: portrait) and (max-width: 1000px) and (min-width: 667px) {
-    #contenedor {
-        width: 70%;
-        left: 15%;
-    }
-
-    #ojo {
-        max-width: 10.5%;
-        left: 64.5%;
-    }
-}
-
-@media only screen and (orientation: portrait) and (max-width: 667px) and (min-width: 384px) {
-    #contenedor {
-        width: 80%;
-        left: 10%;
-    }
-
-    #ojo {
-        max-width: 13.5%;
-        left: 61.5%;
-    }
-}
-
-@media only screen and (orientation: portrait) and (max-width: 384px) and (min-width: 150px) {
-    #contenedor {
-        width: 90%;
-        left: 5%;
-    }
-
-    #ojo {
-        max-width: 16.5%;
-        left: 58.5%;
-    }
-}
+} */

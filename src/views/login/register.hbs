@@ -1,63 +1,73 @@
 <link rel="stylesheet" href="/css/usuarios/registro.css" type="text/css">
 
-<div id="imagen">
-    <img src="/img/portada/Portada 2.png" alt="">
-</div>
+<body>
+    <nav>
+        <img class="image" src="/img/logo.png" alt="Security Vault" height="60px">
+        <ul>
+            <li><a href="/">Home</a></li>
+        </ul>
+    </nav>
 
-<form action="/register" method="post" id="ocultar">
-    <!-- Aquí comienza el formulario -->
-    <div id="contenedor">
-        <div id="titulo">
-            <p>Registro</p>
+    <form action="/register" method="post" id="ocultar">
+        <!-- Aquí comienza el formulario -->
+        <div class="imagen">
+            <img height="510px" width="480px" src="/img/back2.png">
         </div>
+        <div class="contenedor">
+            <div class="titulo">
+                <h1>Registro</h1>
+            </div>
 
-        <div id="nombreUsuario">
-            <label>Nombre Completo:</label>
-            <input type="text" name="namesUser" id="" required>
-        </div>
+            <div>
+                <label class="nombreUsuario">Nombre Completo:</label>
+                <input class="input-nombre" type="text" name="namesUser" id="" placeholder="Ingresa tu nombre" required>
+            </div>
 
-        <div id="identificacion">
-            <label>Identificación:</label>
-            <input type="text" name="identificationCardUser" id="" required>
-        </div>
+            <div >
+                <label class="identificacion">Identificación:</label>
+                <input class="input-identificacion" type="text" name="identificationCardUser" placeholder="1753788599" id="" required>
+            </div>
 
-        <div id="correoUsuario">
-            <label>Correo Electrónico:</label>
-            <input type="text" name="emailUser" id="" required>
-        </div>
+            <div >
+                <label class="correoUsuario">Correo Electrónico:</label>
+                <input class="input-correo" type="text" name="emailUser" placeholder="ejemplo@gmail.com" id="" required>
+            </div>
 
-        <div id="celularUsuario">
-            <label>Celular:</label>
-            <input type="text" name="phoneUser" id="" required>
-        </div>
+            <div >
+                <label class="celularUsuario">Celular:</label>
+                <input class="input-celular" type="text" name="phoneUser" placeholder="0998604567" id="" required>
+            </div>
 
-        <div id="Nick">
-            <label>Usuario:</label>
-            <input type="text" name="username" id="" required>
-        </div>
+            <div >
+                <label class="Nick">Usuario:</label>
+                <input class="input-nick" type="text" name="username" id="" placeholder="Anvorguesito" required>
+            </div>
 
-        <div id="Contraseña">
-            <label>Contraseña:</label>
-            <input type="password" name="password" id="passIntxt" required>
-        </div>
+            <div >
+                <label class="Contraseña">Contraseña:</label>
+                <input class="input-contraseña" type="password" name="password" placeholder="*****" id="passIntxt" required>
+            </div>
 
-        <div id="ojo">
-            <button id="visto" type="button" onclick="boton.cambio()">
-                <img src="/img/icons/white/eyes.png">
-            </button>
-            
-            <button id="equis" type="button" onclick="boton.cambio2()">
-                <img src="/img/icons/white/cerrado.png">
-            </button>
-        </div>
 
-        <div id="boton">
-            <button type="submit">
-                Guardar
-            </button>
+            {{!-- <div id="ojo">
+                <button id="visto" type="button" onclick="boton.cambio()">
+                    <img src="/img/icons/white/eyes.png">
+                </button>
+
+                <button id="equis" type="button" onclick="boton.cambio2()">
+                    <img src="/img/icons/white/cerrado.png">
+                </button>
+            </div> --}}
+
+            <div >
+                <button class="boton" type="submit">
+                    Guardar
+                </button>
+            </div>
         </div>
-    </div>
-    <!-- Aquí termina el formulario -->
-</form>
+        <!-- Aquí termina el formulario -->
+    </form>
+</body>
+
 
 <script src="/js/usuarios/login.js"></script>

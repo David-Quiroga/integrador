@@ -9,6 +9,14 @@ index.show = (req, res) => {
 	res.render('index');
 }
 
+index.mostrar = (req, res) => {
+	res.render('login/login')
+}
+
+index.Mostrar = (req, res) => {
+	res.render('login/register')
+}
+
 index.send = async (req, res) => {
 
 	const implementoCategoria = await sql.query('select * from implementedCategories')

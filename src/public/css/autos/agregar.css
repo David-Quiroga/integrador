@@ -1,10 +1,24 @@
-#contenedor {
-    width: 90%;
-    height: 80%;
-    position: absolute;
-    top: 10%;
-    left: 5%;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+body{
+    background-color: #e2caaeb4;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-attachment: fixed;
+}
+#contenedor{
     text-align: center;
+    position: fixed;
+    top: 120px;
+    left: 300px;
+    background-color: #fff;
+    width: 900px;
+    height: 520px;
 }
 
 #titulo {
@@ -12,7 +26,16 @@
     position: absolute;
     top: 7.5%;
 }
-
+.boton{
+    position: fixed;
+    font-weight:100px;
+    top: 500px;
+    left: 600px;
+    background-color: #90d47f;
+    width: 110px;
+    height: 30px;
+    border: 1px;
+}
 #titulo input {
     display: none;
     font-weight: bolder;
@@ -30,7 +53,7 @@
 
 /*Aquí comienza la seccion de imagen*/
 #imagen {
-    width: 100%;
+    width: 300px;
     height: 100%;
     max-width: 17.5%;
     max-height: 46.5%;
@@ -56,7 +79,7 @@
 #imagen #cambioImagen {
     background-color: white;
     width: 100%;
-    height: 100%;
+    height: 110px;
     max-width: 70%;
     max-height: 55%;
     position: absolute;
@@ -67,7 +90,7 @@
 
 #imagen #cambioImagen #imagenPrevisualizacion {
     width: 100%;
-    height: 100%;
+    height: 110%;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -132,7 +155,7 @@
 
 #Año,
 #Clase {
-    top: 62.5%;
+    top: 32.5%;
 }
 
 #FechaMatricula,
@@ -151,6 +174,7 @@
 #FechaCasudidad input,
 #Clase select {
     height: 100%;
+    width: 100%;
 }
 
 /* BOTON */
