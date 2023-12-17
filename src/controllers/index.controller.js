@@ -19,19 +19,19 @@ index.Mostrar = (req, res) => {
 
 index.send = async (req, res) => {
 
-	const implementoCategoria = await sql.query('select * from implementedCategories')
+	const implementoCategoria = await sql.query('select * from users')
 	if (implementoCategoria.length == 0) {
 		const categoria = implementoCategoria[0]
 		if (categoria == undefined) {
-			await sql.query('INSERT INTO implementedCategories(nameImplementedCategory) VALUES ("CODIGOS DE ESPECIFICACIÓN")')
-			await sql.query('INSERT INTO implementedCategories(nameImplementedCategory) VALUES ("NIVELES")')
-			await sql.query('INSERT INTO implementedCategories(nameImplementedCategory) VALUES ("ELEMENTOS DE SEGURIDAD Y SERVICIOS")')
-			await sql.query('INSERT INTO implementedCategories(nameImplementedCategory) VALUES ("HERRAMIENTAS")')
-			await sql.query('INSERT INTO implementedCategories(nameImplementedCategory) VALUES ("LUCES")')
+			// await sql.query('INSERT INTO implementedCategories(nameImplementedCategory) VALUES ("CODIGOS DE ESPECIFICACIÓN")')
+			// await sql.query('INSERT INTO implementedCategories(nameImplementedCategory) VALUES ("NIVELES")')
+			// await sql.query('INSERT INTO implementedCategories(nameImplementedCategory) VALUES ("ELEMENTOS DE SEGURIDAD Y SERVICIOS")')
+			// await sql.query('INSERT INTO implementedCategories(nameImplementedCategory) VALUES ("HERRAMIENTAS")')
+			// await sql.query('INSERT INTO implementedCategories(nameImplementedCategory) VALUES ("LUCES")')
 
-			await sql.query('CREATE VIEW implementos AS SELECT c.*,e.*, d.idSecurityElemenstAndServisDetails, d.nameSecurityElemenstAndServisDetails, d.typeSecurityElemenstAndServisDetails, d.stateSecurityElemenstAndServisDetails, d.SecurityElemenstAndServiIdSecurityElemenstAndServis FROM cars c JOIN securityelemenstandservisdetails d ON d.CarIdCars = c.idCars JOIN securityelemenstandservis e ON d.SecurityElemenstAndServiIdSecurityElemenstAndServis = e.idSecurityElemenstAndServis')
-			await sql.query('CREATE VIEW matriculas AS SELECT l.idlicensePlate,l.datelicensePlates,l.registrationYearLicensePlates,l.registrationExpirationDateLicensePlates,l.toNameLicensePlates, t.* FROM licensePlates l JOIN tuitiontaxes t ON t.licensePlateIdlicensePlate =l.idlicensePlate')
-			await sql.query('CREATE VIEW ordenTrabajo AS SELECT c.*, o.*, v.* from cars c JOIN orderworks o ON o.CarIdCars = c.idCars JOIN vendors v ON v.idVendor = o.vendorIdVendor')
+			// await sql.query('CREATE VIEW implementos AS SELECT c.*,e.*, d.idSecurityElemenstAndServisDetails, d.nameSecurityElemenstAndServisDetails, d.typeSecurityElemenstAndServisDetails, d.stateSecurityElemenstAndServisDetails, d.SecurityElemenstAndServiIdSecurityElemenstAndServis FROM cars c JOIN securityelemenstandservisdetails d ON d.CarIdCars = c.idCars JOIN securityelemenstandservis e ON d.SecurityElemenstAndServiIdSecurityElemenstAndServis = e.idSecurityElemenstAndServis')
+			// await sql.query('CREATE VIEW matriculas AS SELECT l.idlicensePlate,l.datelicensePlates,l.registrationYearLicensePlates,l.registrationExpirationDateLicensePlates,l.toNameLicensePlates, t.* FROM licensePlates l JOIN tuitiontaxes t ON t.licensePlateIdlicensePlate =l.idlicensePlate')
+			// await sql.query('CREATE VIEW ordenTrabajo AS SELECT c.*, o.*, v.* from cars c JOIN orderworks o ON o.CarIdCars = c.idCars JOIN vendors v ON v.idVendor = o.vendorIdVendor')
 		}
 	}
 

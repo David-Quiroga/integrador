@@ -1,54 +1,70 @@
 <link rel="stylesheet" href="/css/autos/lista.css">
+
 <body>
+    <nav>
+        <img class="image" src="/img/logo.png" alt="Security Vault" height="60px">
+        <ul>
+            <li><a href="/capacitacion">Capacitate</a></li>
+            <li><a href="/">Cerrar Sesion</a></li>
+        </ul>
+    </nav>
     <form action="/cars/list/{{user.idUsers}}" method="get" id="ocultar">
-    <div id="contenedor">
-        <div class="row">
-            {{#each list}}
-            <div id="tarjetas">
-                <div id="imagen">
-                    <img src="/img/cars/{{imageCars}}" alt="">
-                </div>
+        <div id="contenedor">
+            <div class="row">
+                {{#each list}}
+                <div id="tarjetas">
+                    <div id="imagen">
+                        <img src="/img/cars/{{imageCars}}" alt="">
+                    </div>
 
-                <div id="matricula">
-                    <p><b>Plataforma:</b> {{nombrePlataforma}}</p>
-                </div>
+                    <div id="matricula">
+                        <p><b>Plataforma:</b> {{nombrePlataforma}}</p>
+                    </div>
 
-                <div id="modelo">
+                    <div id="modelo">
                         <p><b>Contraseña:</b> {{password}}</p>
-                </div>
+                    </div>
 
-                <div id="plataforma">
-                    <p><b>Correo Electronico:</b> {{correoElectronico}}</p>
-                </div> 
-                <div>
-                    <p><b>Tipo de Plataforma:</b> {{categoria}}</p>
-                </div>
+                    <div id="plataforma">
+                        <p><b>Correo Electronico:</b> {{correoElectronico}}</p>
+                    </div>
+                    <div>
+                        <p><b>Tipo de Plataforma:</b> {{categoria}}</p>
+                    </div>
 
                     <div id="editar">
                         <a href="/cars/edit/{{idCars}}">
                             <button type="button">Actualizar</button>
                         </a>
                     </div>
-            </div>
+                </div>
 
-            {{else}}
-            <div id="mensaje">
-                <a href="/cars/add/{{user.idUsers}}">
-                    <button type="button">
-                        ¿Desea ingresar sus contraseñas?
-                    </button>
-                </a>
+                {{else}}
+                <div id="mensaje">
+                    <a href="/cars/add/{{user.idUsers}}">
+                        <button type="button">
+                            ¿Desea ingresar sus contraseñas?
+                        </button>
+                    </a>
+                </div>
+                {{/each}}
             </div>
-            {{/each}}
         </div>
-    </div>
 
-    <div id="boton">
-        <a href="/cars/add/{{user.idUsers}}">
-            <button type="button">
-                <img src="/img/icons/black/plus.png" id="plus">
-            </button>
-        </a>
-    </div>
-</form>
+        <div id="boton">
+            <a href="/cars/add/{{user.idUsers}}">
+                <button type="button">
+                    <img src="/img/icons/black/plus.png" id="plus">
+                </button>
+            </a>
+        </div>
+    </form>
+
+    <footer>
+        <p>
+            <a href="#">Términos y condiciones</a> |
+            <a href="#">Política de Privacidad</a> |
+            <a href="#">Aviso Legal</a>
+        </p>
+    </footer>
 </body>

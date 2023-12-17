@@ -12,10 +12,17 @@ generalList.showCars = async (req, res) => {
     const list = await sql.query('select * from Cars')
     res.render('general/autos/listCars', { list })
 }
+generalList.showPersonal = async(req, res) => {
+    res.render('general/personal/perosonalList')
+}
 
 generalList.showCarsAdd = async (req, res) => {
     const maxId = await sql.query('select max(idCars) as maximo from Cars')
     res.render('general/autos/addCars', { maxId })
+}
+
+generalList.showCapacitacion = async (req, res) => {
+    res.render('general/capacitacion')
 }
 generalList.sendCarsadd = async (req, res) => {
     const id = req.user.idUsers
